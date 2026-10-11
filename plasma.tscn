@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cvjvv4b0hv7yj"]
+
+[ext_resource type="Script" uid="uid://7x46lx0hpd8j" path="res://plasma.gd" id="1_s5q6h"]
+[ext_resource type="Texture2D" uid="uid://0w8ulqohe2fy" path="res://pepper exe chase.png" id="2_nk86c"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_666lg"]
+size = Vector3(0.0539246, 0.215176, 0.0568848)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lp5it"]
+size = Vector3(0.129578, 1, 0.226135)
+
+[node name="bullet" type="CharacterBody3D" unique_id=435954964]
+script = ExtResource("1_s5q6h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1209220873]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0019989, -0.00642967, 0.00500488)
+shape = SubResource("BoxShape3D_666lg")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=815394298]
+transform = Transform3D(0.205, 0, 0, 0, 0.205, 0, 0, 0, 0.205, 0, 0, 0)
+billboard = 2
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("2_nk86c")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1335227498]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=819436277]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00271606, 0, -0.00552368)
+shape = SubResource("BoxShape3D_lp5it")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

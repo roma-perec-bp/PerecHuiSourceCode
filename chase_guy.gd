@@ -1,0 +1,39 @@
+extends CharacterBody3D
+
+const SPEED = 6.0
+var can_move = false
+
+@onready var nav: NavigationAgent3D = $NavigationAgent3D
+
+func _ready():
+	#warning fix for NavAgent
+	set_physics_process(false)
+	call_deferred("actor_setup")
+	
+#check setup
+func actor_setup():
+	NavigationServer3D.map_changed.connect(Callable(map_ready))
+	
+#check if ready
+func map_ready(_rid): 
+	set_physics_process(true)
+	NavigationServer3D.map_changed.disconnect(Callable(map_ready))
+
+func _physics_process(delta: float) -> void:
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	if can_move:
+		_walk_test(delta)
+
+	move_and_slide()
+
+func _walk_test(elapsed: float):
+	var direction = Vector3()
+	
+	nav.target_position = get_parent().get_node("player").global_position
+		
+	direction = nav.get_next_path_position() - global_position
+	direction = direction.normalized()
+	
+	#It goes to target that is set
+	velocity = velocity.lerp(direction * SPEED, 10 * elapsed)

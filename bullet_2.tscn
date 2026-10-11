@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cwyspvikqtnn7"]
+
+[ext_resource type="Script" uid="uid://kb0b6tcqnr52" path="res://bullet_2.gd" id="1_13ykv"]
+[ext_resource type="Texture2D" uid="uid://bncb1jw0ios3a" path="res://troop.png" id="2_jeiei"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_666lg"]
+size = Vector3(0.0586854, 0.215176, 0.0301361)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h3elq"]
+size = Vector3(0.129578, 1, 0.226135)
+
+[node name="bullet" type="CharacterBody3D" unique_id=1494539067]
+script = ExtResource("1_13ykv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1334602901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00560003, -0.00642967, 0.000221223)
+shape = SubResource("BoxShape3D_666lg")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=82157918]
+transform = Transform3D(0.085, 0, 0, 0, 0.085, 0, 0, 0, 0.085, 0, 0, 0)
+billboard = 2
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("2_jeiei")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=902212113]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1012809866]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00271606, 0, -0.00552368)
+shape = SubResource("BoxShape3D_h3elq")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

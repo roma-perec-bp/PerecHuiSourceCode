@@ -1,0 +1,966 @@
+[gd_scene format=4 uid="uid://be5ravicabl52"]
+
+[ext_resource type="Shader" uid="uid://dp81gdmvugtxc" path="res://glitch1.gdshader" id="1_f5h3o"]
+[ext_resource type="Script" uid="uid://bulopstfdb8hg" path="res://main_menu.gd" id="1_mv6wy"]
+[ext_resource type="Texture2D" uid="uid://c6gtf5kv3gfd" path="res://1_.png" id="2_khjoy"]
+[ext_resource type="AudioStream" uid="uid://bpb4te1vld1ii" path="res://Doomed.wav" id="2_ntcnp"]
+[ext_resource type="AudioStream" uid="uid://ci45hgeup4630" path="res://menuTrans.wav" id="3_j4fjw"]
+[ext_resource type="Texture2D" uid="uid://cp6ndxkd76nx8" path="res://logohui.png" id="3_txd60"]
+[ext_resource type="AudioStream" uid="uid://dqrn43av1ocmo" path="res://fateAccept.wav" id="4_v4v3o"]
+[ext_resource type="AudioStream" uid="uid://blrb05m611b1p" path="res://menu_trans.wav" id="5_5ecgr"]
+[ext_resource type="Texture2D" uid="uid://cpqyjsel32eef" path="res://pepHed.png" id="6_qj4i8"]
+[ext_resource type="Shader" uid="uid://cu5gmgwc1gvt7" path="res://anothjerGlitc.gdshader" id="6_xvagr"]
+[ext_resource type="Texture2D" uid="uid://byteqtb4e8hvc" path="res://pepHand.png" id="7_kun78"]
+[ext_resource type="Texture2D" uid="uid://d2dmmmm1h8u5l" path="res://titleShit.png" id="9_shlr1"]
+[ext_resource type="Texture2D" uid="uid://dw8aautjfa8lv" path="res://bgFake.png" id="10_373wm"]
+[ext_resource type="Shader" uid="uid://cad2mr61e5ph5" path="res://pulse.gdshader" id="10_i2orb"]
+[ext_resource type="Shader" uid="uid://fdguoi66lv01" path="res://melt.gdshader" id="10_k856f"]
+[ext_resource type="Script" uid="uid://ceo5ptv6nym7e" path="res://melt.gd" id="11_co2ms"]
+[ext_resource type="Shader" uid="uid://b8e1nfiv6jyg6" path="res://scroll.gdshader" id="14_0ce46"]
+[ext_resource type="Texture2D" uid="uid://bxwdohuw8fa8j" path="res://youDead.png" id="15_mt75g"]
+[ext_resource type="Texture2D" uid="uid://cfv5j6ivl6aow" path="res://youSelect1.png" id="16_1fsk3"]
+[ext_resource type="Texture2D" uid="uid://bwsf71cjsiuj4" path="res://youSelect2.png" id="17_l5bry"]
+[ext_resource type="Texture2D" uid="uid://d21dwcy2nosek" path="res://followAttack.png" id="18_8ck3p"]
+[ext_resource type="Texture2D" uid="uid://bk4wg3cxt7uk0" path="res://peaDead.png" id="18_d3h8d"]
+[ext_resource type="Texture2D" uid="uid://daxyvfa2oryq1" path="res://peaLocked.png" id="19_q3yas"]
+[ext_resource type="Texture2D" uid="uid://u3foldrq7i5t" path="res://peaSelect1.png" id="20_6ditc"]
+[ext_resource type="Texture2D" uid="uid://o87576hyubjc" path="res://peaSelect2.png" id="21_atcp6"]
+[ext_resource type="Texture2D" uid="uid://bkant2dfb2cjk" path="res://romDead.png" id="22_m2d58"]
+[ext_resource type="Texture2D" uid="uid://370r4xd3f3b" path="res://romLocked.png" id="23_djfbl"]
+[ext_resource type="Texture2D" uid="uid://6vu2mnxkhtb8" path="res://romSelect1.png" id="24_2ibt6"]
+[ext_resource type="Texture2D" uid="uid://c2jqn1m6ygn8n" path="res://romSelect2.png" id="25_afyi3"]
+[ext_resource type="FontFile" uid="uid://bixcr7xbpo5cj" path="res://Sonic 1 Title Screen Filled.ttf" id="26_sb50o"]
+[ext_resource type="FontFile" uid="uid://ckg6rcbt70t8n" path="res://HouseofTerrorRus.ttf" id="30_4fwnx"]
+[ext_resource type="Texture2D" uid="uid://chw4xok0dsh5n" path="res://noise1.png" id="30_kcyfl"]
+[ext_resource type="AudioStream" uid="uid://01056p4fhgek" path="res://ending_1.wav" id="31_sn6va"]
+[ext_resource type="Texture2D" uid="uid://paleoe8jcu61" path="res://noise2.png" id="31_wt2sd"]
+[ext_resource type="Texture2D" uid="uid://ds3728xr66il8" path="res://noise3.png" id="32_prqsj"]
+[ext_resource type="Texture2D" uid="uid://nnwrcsxvp4on" path="res://noise4.png" id="33_m0fig"]
+[ext_resource type="Texture2D" uid="uid://c7a7rjddlfast" path="res://arrow_menu.png" id="34_wt2sd"]
+[ext_resource type="Script" uid="uid://cds6qpiokfabv" path="res://options.gd" id="37_8f6wj"]
+[ext_resource type="FontFile" uid="uid://bhxx1wiq3g7dv" path="res://Comic Sans MS Pixel.ttf" id="37_prqsj"]
+[ext_resource type="Texture2D" uid="uid://0lwlxls0f6nf" path="res://hui chek.png" id="38_771fs"]
+[ext_resource type="Texture2D" uid="uid://desa8jt3hwpc1" path="res://hui unchek.png" id="39_554fm"]
+[ext_resource type="Texture2D" uid="uid://cm3oj2xyu8bit" path="res://circle hui.png" id="40_554fm"]
+
+[sub_resource type="AudioStreamWAV" id="AudioStreamWAV_oe2fn"]
+data = PackedByteArray("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")
+format = 3
+mix_rate = 22050
+stereo = true
+tags = {
+"comment": "                              ",
+"genre": "??????",
+"title": "http://noisefx.ru"
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_epgjj"]
+shader = ExtResource("6_xvagr")
+shader_parameter/red_displacement = 1.0
+shader_parameter/green_displacement = 1.0
+shader_parameter/blue_displacement = 1.0
+shader_parameter/ghost = 0.0
+shader_parameter/intensity = 1.0
+shader_parameter/scan_effect = 1.0
+shader_parameter/distortion_effect = 0.0
+shader_parameter/negative_effect = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3onu5"]
+shader = ExtResource("1_f5h3o")
+shader_parameter/shake_power = 1.35
+shader_parameter/shake_rate = 1.0
+shader_parameter/shake_speed = 5.0
+shader_parameter/shake_block_size = 30.5
+shader_parameter/shake_color_rate = 0.01
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eq5kl"]
+shader = ExtResource("10_i2orb")
+shader_parameter/shine_color = Color(0, 0, 0, 1)
+shader_parameter/alpha_limit = 0.0
+shader_parameter/cycle_speed = 0.5
+shader_parameter/full_pulse_cycle = true
+shader_parameter/mode = 1
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5qboh"]
+shader = ExtResource("10_k856f")
+shader_parameter/timer = 0.0
+shader_parameter/y_offsets = PackedFloat32Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/melting = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n1xy7"]
+shader = ExtResource("14_0ce46")
+shader_parameter/amplitutde = Vector2(0.175, 0.145)
+shader_parameter/speed = Vector2(3.705, 2.985)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8ck3p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_68e7s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1rnh5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kcyfl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wt2sd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_prqsj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m0fig"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_771fs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_554fm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8f6wj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ecgr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gqhje"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_mt75g")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("16_1fsk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_l5bry")
+}],
+"loop": true,
+"name": &"select",
+"speed": 24.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kkgt0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_d3h8d")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_q3yas")
+}],
+"loop": true,
+"name": &"locked",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_6ditc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_atcp6")
+}],
+"loop": true,
+"name": &"select",
+"speed": 24.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pljp3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_m2d58")
+}],
+"loop": true,
+"name": &"dead",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_djfbl")
+}],
+"loop": true,
+"name": &"locked",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_2ibt6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_afyi3")
+}],
+"loop": true,
+"name": &"select",
+"speed": 24.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_771fs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_kcyfl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_wt2sd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_prqsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_m0fig")
+}],
+"loop": true,
+"name": &"default",
+"speed": 24.0
+}]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_8f6wj"]
+color = Color(1, 0, 0, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_554fm"]
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_5ecgr"]
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oe2fn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ly5wf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i54o2"]
+
+[node name="Control" type="Control" unique_id=861970579]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mv6wy")
+
+[node name="mainMenu" type="AudioStreamPlayer2D" parent="." unique_id=52205557]
+stream = ExtResource("2_ntcnp")
+autoplay = true
+panning_strength = 0.0
+bus = &"Music"
+
+[node name="trans1" type="AudioStreamPlayer2D" parent="." unique_id=1818723633]
+stream = ExtResource("3_j4fjw")
+panning_strength = 0.0
+bus = &"Sound"
+
+[node name="accept" type="AudioStreamPlayer2D" parent="." unique_id=1138754192]
+stream = ExtResource("4_v4v3o")
+panning_strength = 0.0
+bus = &"Sound"
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1224351732]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="select" type="AudioStreamPlayer2D" parent="." unique_id=2028284322]
+stream = SubResource("AudioStreamWAV_oe2fn")
+bus = &"Sound"
+
+[node name="trans" type="AudioStreamPlayer2D" parent="." unique_id=356827892]
+stream = ExtResource("5_5ecgr")
+bus = &"Sound"
+
+[node name="Main" type="Control" parent="." unique_id=120500369]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="ColorRect" parent="Main" unique_id=1216753672]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="guy" type="TextureRect" parent="Main" unique_id=1479230294]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 642.0
+offset_bottom = 479.0
+texture = ExtResource("2_khjoy")
+expand_mode = 1
+
+[node name="head2" type="TextureRect" parent="Main" unique_id=341732705]
+material = SubResource("ShaderMaterial_epgjj")
+layout_mode = 0
+offset_left = 275.0
+offset_top = 235.0
+offset_right = 430.0
+offset_bottom = 366.0
+rotation = 0.270526
+texture = ExtResource("6_qj4i8")
+
+[node name="hand3" type="TextureRect" parent="Main" unique_id=914593969]
+layout_mode = 0
+offset_left = 540.0
+offset_top = -13.0
+offset_right = 660.0
+offset_bottom = 139.0
+texture = ExtResource("7_kun78")
+
+[node name="hand4" type="TextureRect" parent="Main" unique_id=181417457]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -13.0
+offset_right = 100.0
+offset_bottom = 139.0
+texture = ExtResource("7_kun78")
+flip_h = true
+
+[node name="glitch" type="ColorRect" parent="Main" unique_id=454321203]
+material = SubResource("ShaderMaterial_3onu5")
+layout_mode = 0
+offset_left = 3.0
+offset_top = 1.0
+offset_right = 642.0
+offset_bottom = 479.0
+
+[node name="hand" type="TextureRect" parent="Main" unique_id=403238948]
+layout_mode = 0
+offset_left = 540.0
+offset_top = -13.0
+offset_right = 660.0
+offset_bottom = 139.0
+texture = ExtResource("7_kun78")
+
+[node name="hand2" type="TextureRect" parent="Main" unique_id=1547052687]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -13.0
+offset_right = 100.0
+offset_bottom = 139.0
+texture = ExtResource("7_kun78")
+flip_h = true
+
+[node name="logo" type="TextureRect" parent="Main" unique_id=1436737091]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -219.0
+offset_top = -214.0
+offset_right = 230.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_txd60")
+
+[node name="head" type="TextureRect" parent="Main" unique_id=1053320447]
+modulate = Color(0.223103, 0.223103, 0.223103, 1)
+material = SubResource("ShaderMaterial_epgjj")
+layout_mode = 0
+offset_left = 275.0
+offset_top = 235.0
+offset_right = 430.0
+offset_bottom = 366.0
+rotation = 0.270526
+texture = ExtResource("6_qj4i8")
+
+[node name="press" type="TextureRect" parent="Main" unique_id=1600714852]
+material = SubResource("ShaderMaterial_eq5kl")
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -164.5
+offset_top = -55.0
+offset_right = 164.5
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("9_shlr1")
+
+[node name="melt" type="ColorRect" parent="." unique_id=968990722]
+visible = false
+material = SubResource("ShaderMaterial_5qboh")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("11_co2ms")
+
+[node name="Selection" type="Control" parent="." unique_id=126513059]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="bg" type="TextureRect" parent="Selection" unique_id=646669559]
+material = SubResource("ShaderMaterial_n1xy7")
+layout_mode = 0
+offset_left = -7.0
+offset_top = -12.0
+offset_right = 653.0
+offset_bottom = 497.0
+texture = ExtResource("10_373wm")
+
+[node name="main_menu" type="Control" parent="Selection" unique_id=2006178099]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="start" type="Button" parent="Selection/main_menu" unique_id=210225337]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 24.0
+offset_right = 209.0
+offset_bottom = 93.0
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../quit")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../options")
+theme_override_colors/font_color = Color(0.80813736, 3.272891e-06, 7.70092e-07, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("26_sb50o")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8ck3p")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_68e7s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1rnh5")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_kcyfl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wt2sd")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_prqsj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m0fig")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_771fs")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_554fm")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8f6wj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5ecgr")
+text = "START"
+
+[node name="options" type="Button" parent="Selection/main_menu" unique_id=1928570255]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 88.0
+offset_right = 271.0
+offset_bottom = 157.0
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../start")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../quit")
+theme_override_colors/font_color = Color(0.80813736, 3.272891e-06, 7.70092e-07, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("26_sb50o")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8ck3p")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_68e7s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1rnh5")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_kcyfl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wt2sd")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_prqsj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m0fig")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_771fs")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_554fm")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8f6wj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5ecgr")
+text = "options"
+
+[node name="quit" type="Button" parent="Selection/main_menu" unique_id=741950475]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 152.0
+offset_right = 215.0
+offset_bottom = 221.0
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath("../options")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath("../start")
+theme_override_colors/font_color = Color(0.80813736, 3.272891e-06, 7.70092e-07, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("26_sb50o")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8ck3p")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_68e7s")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1rnh5")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_kcyfl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wt2sd")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_prqsj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_m0fig")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_771fs")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_554fm")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_8f6wj")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5ecgr")
+text = "QUIT"
+
+[node name="Head" type="TextureRect" parent="Selection/main_menu" unique_id=2037342300]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 80.0
+offset_right = 641.0
+offset_bottom = 520.0
+texture = ExtResource("2_khjoy")
+
+[node name="funny_flicker" type="TextureRect" parent="Selection/main_menu" unique_id=609216381]
+visible = false
+self_modulate = Color(0.49424517, 1.4018082e-06, 2.4065375e-07, 1)
+layout_mode = 0
+offset_left = 333.0
+offset_top = 41.0
+offset_right = 607.0
+offset_bottom = 349.0
+texture = ExtResource("18_8ck3p")
+flip_h = true
+
+[node name="select_menu" type="Control" parent="Selection" unique_id=10502180]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="youButton" type="AnimatedSprite2D" parent="Selection/select_menu" unique_id=421545313]
+position = Vector2(121.5, 235.375)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_gqhje")
+animation = &"dead"
+
+[node name="peaButton" type="AnimatedSprite2D" parent="Selection/select_menu" unique_id=2034712112]
+position = Vector2(324.50003, 235.37502)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_kkgt0")
+animation = &"dead"
+
+[node name="romButton" type="AnimatedSprite2D" parent="Selection/select_menu" unique_id=316550805]
+position = Vector2(521.5, 235.375)
+scale = Vector2(0.8, 0.8)
+sprite_frames = SubResource("SpriteFrames_pljp3")
+animation = &"dead"
+
+[node name="static1" type="AnimatedSprite2D" parent="Selection/select_menu" unique_id=980364710]
+position = Vector2(119.5, 152.5)
+scale = Vector2(0.195, 0.14375)
+sprite_frames = SubResource("SpriteFrames_771fs")
+autoplay = "default"
+frame_progress = 0.09794243
+
+[node name="static2" type="AnimatedSprite2D" parent="Selection/select_menu" unique_id=910885411]
+position = Vector2(325.5, 152.5)
+scale = Vector2(0.195, 0.14375)
+sprite_frames = SubResource("SpriteFrames_771fs")
+autoplay = "default"
+frame_progress = 0.28747687
+
+[node name="static3" type="AnimatedSprite2D" parent="Selection/select_menu" unique_id=486481972]
+position = Vector2(518.5, 152.5)
+scale = Vector2(0.195, 0.14375)
+sprite_frames = SubResource("SpriteFrames_771fs")
+autoplay = "default"
+frame_progress = 0.28747687
+
+[node name="text" type="Label" parent="Selection/select_menu" unique_id=1006589979]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -129.5
+offset_top = 28.0
+offset_right = 129.5
+offset_bottom = 54.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.358988, 6.70822e-07, 1.20327e-07, 1)
+theme_override_fonts/font = ExtResource("26_sb50o")
+text = "Choose your Victim"
+
+[node name="no" type="Label" parent="Selection/select_menu" unique_id=589391823]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -74.5
+offset_top = -47.0
+offset_right = 74.5
+offset_bottom = -24.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "You have no choise
+Press ENTER to Start"
+horizontal_alignment = 1
+
+[node name="arrow_1" type="TextureRect" parent="Selection/select_menu" unique_id=1614725156]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("34_wt2sd")
+
+[node name="arrow_2" type="TextureRect" parent="Selection/select_menu" unique_id=402123620]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 40.0
+offset_bottom = 20.0
+grow_vertical = 2
+texture = ExtResource("34_wt2sd")
+flip_h = true
+
+[node name="shit" type="ColorRect" parent="Selection" unique_id=132502966]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1390734187]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 76.0
+offset_right = -71.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("30_4fwnx")
+theme_override_font_sizes/font_size = 36
+text = "9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="flash" type="ColorRect" parent="." unique_id=511561162]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="flash2" type="ColorRect" parent="." unique_id=1098012628]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="perec" type="AudioStreamPlayer" parent="." unique_id=389563307]
+stream = ExtResource("31_sn6va")
+bus = &"Sound"
+
+[node name="Timer" type="Timer" parent="." unique_id=498224838]
+wait_time = 0.16
+one_shot = true
+
+[node name="options" type="Control" parent="." unique_id=1556200399]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("37_8f6wj")
+
+[node name="red" type="ColorRect" parent="options" unique_id=782387490]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -283.845
+offset_top = -200.67
+offset_right = 284.39
+offset_bottom = 201.61505
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 1)
+
+[node name="bg" type="ColorRect" parent="options" unique_id=194904785]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -281.5
+offset_top = -197.5
+offset_right = 281.5
+offset_bottom = 197.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="vsync_txt" type="Label" parent="options" unique_id=1236211187]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 63.0
+offset_right = 183.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("37_prqsj")
+theme_override_font_sizes/font_size = 29
+text = "Vsync"
+
+[node name="full_txt" type="Label" parent="options" unique_id=632191754]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 107.0
+offset_right = 191.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("37_prqsj")
+theme_override_font_sizes/font_size = 29
+text = "Full-Screen"
+
+[node name="flashing txt" type="Label" parent="options" unique_id=1986910203]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 153.0
+offset_right = 288.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("37_prqsj")
+theme_override_font_sizes/font_size = 29
+text = "Flashing Lights"
+
+[node name="Sense txt" type="Label" parent="options" unique_id=78245627]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 202.0
+offset_right = 340.0
+offset_bottom = 234.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("37_prqsj")
+theme_override_font_sizes/font_size = 29
+text = "Mouse Sensivity"
+
+[node name="music volume" type="Label" parent="options" unique_id=1116038397]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 250.0
+offset_right = 340.0
+offset_bottom = 282.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("37_prqsj")
+theme_override_font_sizes/font_size = 29
+text = "Music Volume"
+
+[node name="music volume2" type="Label" parent="options" unique_id=660513439]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 298.0
+offset_right = 340.0
+offset_bottom = 330.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("37_prqsj")
+theme_override_font_sizes/font_size = 29
+text = "SFX Volume"
+
+[node name="vsync_check" type="CheckBox" parent="options" unique_id=876503724]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -171.0
+offset_right = -91.0
+offset_bottom = -147.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/checked = ExtResource("38_771fs")
+theme_override_icons/unchecked = ExtResource("39_554fm")
+
+[node name="full_check" type="CheckBox" parent="options" unique_id=1384434040]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -91.0
+offset_top = -128.0
+offset_right = -67.0
+offset_bottom = -104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/checked = ExtResource("38_771fs")
+theme_override_icons/unchecked = ExtResource("39_554fm")
+
+[node name="flash_check" type="CheckBox" parent="options" unique_id=1036530325]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -79.0
+offset_top = -82.0
+offset_right = -55.0
+offset_bottom = -58.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/checked = ExtResource("38_771fs")
+theme_override_icons/unchecked = ExtResource("39_554fm")
+
+[node name="sense_slider" type="HSlider" parent="options" unique_id=1821948697]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 207.0
+offset_right = 528.0
+offset_bottom = 229.0
+theme_override_icons/grabber = ExtResource("40_554fm")
+theme_override_icons/grabber_highlight = ExtResource("40_554fm")
+theme_override_icons/grabber_disabled = ExtResource("40_554fm")
+theme_override_styles/slider = SubResource("StyleBoxLine_8f6wj")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_554fm")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_5ecgr")
+min_value = 50.0
+max_value = 1000.0
+value = 50.0
+
+[node name="music_slider" type="HSlider" parent="options" unique_id=1789454146]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 258.0
+offset_right = 497.0
+offset_bottom = 280.0
+theme_override_icons/grabber = ExtResource("40_554fm")
+theme_override_icons/grabber_highlight = ExtResource("40_554fm")
+theme_override_icons/grabber_disabled = ExtResource("40_554fm")
+theme_override_styles/slider = SubResource("StyleBoxLine_8f6wj")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_554fm")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_5ecgr")
+min_value = -24.0
+max_value = 0.0
+
+[node name="sound_slider" type="HSlider" parent="options" unique_id=1107536587]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 306.0
+offset_right = 495.0
+offset_bottom = 328.0
+theme_override_icons/grabber = ExtResource("40_554fm")
+theme_override_icons/grabber_highlight = ExtResource("40_554fm")
+theme_override_icons/grabber_disabled = ExtResource("40_554fm")
+theme_override_styles/slider = SubResource("StyleBoxLine_8f6wj")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_554fm")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_5ecgr")
+min_value = -24.0
+max_value = 0.0
+
+[node name="Button" type="Button" parent="options" unique_id=1150889250]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.0
+offset_top = 144.0
+offset_right = 63.0
+offset_bottom = 189.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0.016666412, 1)
+theme_override_colors/font_pressed_color = Color(0.19, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.49, 0, 0, 1)
+theme_override_fonts/font = ExtResource("37_prqsj")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxEmpty_oe2fn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ly5wf")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_i54o2")
+text = "BACK"
+
+[connection signal="nahui" from="melt" to="." method="_on_melt_nahui"]
+[connection signal="focus_entered" from="Selection/main_menu/start" to="." method="_on_start_focus_entered"]
+[connection signal="focus_exited" from="Selection/main_menu/start" to="." method="_on_start_focus_exited"]
+[connection signal="pressed" from="Selection/main_menu/start" to="." method="_on_start_pressed"]
+[connection signal="focus_entered" from="Selection/main_menu/options" to="." method="_on_options_focus_entered"]
+[connection signal="focus_exited" from="Selection/main_menu/options" to="." method="_on_options_focus_exited"]
+[connection signal="pressed" from="Selection/main_menu/options" to="." method="_on_options_pressed"]
+[connection signal="focus_entered" from="Selection/main_menu/quit" to="." method="_on_quit_focus_entered"]
+[connection signal="focus_exited" from="Selection/main_menu/quit" to="." method="_on_quit_focus_exited"]
+[connection signal="pressed" from="Selection/main_menu/quit" to="." method="_on_quit_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="toggled" from="options/vsync_check" to="options" method="_on_vsync_check_toggled"]
+[connection signal="toggled" from="options/full_check" to="options" method="_on_full_check_toggled"]
+[connection signal="toggled" from="options/flash_check" to="options" method="_on_flash_check_toggled"]
+[connection signal="value_changed" from="options/sense_slider" to="options" method="_on_sense_slider_value_changed"]
+[connection signal="value_changed" from="options/music_slider" to="options" method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="options/sound_slider" to="options" method="_on_sound_slider_value_changed"]
+[connection signal="pressed" from="options/Button" to="." method="_on_button_pressed"]

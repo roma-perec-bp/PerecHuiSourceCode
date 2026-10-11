@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://daetf1r2jd74i"]
+
+[ext_resource type="Texture2D" uid="uid://d21dwcy2nosek" path="res://followAttack.png" id="1_6h1fi"]
+[ext_resource type="Script" uid="uid://n8lkb1a2my8c" path="res://flying_obj.gd" id="2_yhcsv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u1oks"]
+size = Vector3(0.31897, 0.429199, 0.262268)
+
+[node name="head" type="Sprite3D" unique_id=747026371]
+transform = Transform3D(2.605, 0, 0, 0, 2.605, 0, 0, 0, 2.605, 0, 0, 0)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("1_6h1fi")
+script = ExtResource("2_yhcsv")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=451804611]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=939005377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0125122, 0.0202637, -0.0111389)
+shape = SubResource("BoxShape3D_u1oks")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

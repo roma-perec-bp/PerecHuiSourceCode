@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://dfve1rskybb6n"]
+
+[ext_resource type="Shader" uid="uid://co2vpmqop5hx0" path="res://color.gdshader" id="1_dxnco"]
+[ext_resource type="Texture2D" uid="uid://du1uo1wcuetfx" path="res://satanic_attack.png" id="1_keuex"]
+[ext_resource type="Script" uid="uid://bgnokvti3s66o" path="res://rain_attack.gd" id="2_o2d0f"]
+[ext_resource type="Animation" uid="uid://crbkj0nv31mue" path="res://flash.res" id="4_wa3ch"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wa3ch"]
+resource_local_to_scene = true
+render_priority = 2
+shader = ExtResource("1_dxnco")
+shader_parameter/tex = ExtResource("1_keuex")
+shader_parameter/flash_color = Color(1, 1, 1, 1)
+shader_parameter/intensity = 0.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nweix"]
+size = Vector3(1, 1, 0.132874)
+
+[sub_resource type="Animation" id="Animation_wa3ch"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material_override:shader_parameter/intensity")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wa3ch"]
+_data = {
+&"RESET": SubResource("Animation_wa3ch"),
+&"flash": ExtResource("4_wa3ch")
+}
+
+[node name="Sprite3D" type="Sprite3D" unique_id=1653976302]
+transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 0, 0, 0)
+material_override = SubResource("ShaderMaterial_wa3ch")
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("1_keuex")
+script = ExtResource("2_o2d0f")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1745214042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.49691e-07, 8)
+
+[node name="Area3D" type="Area3D" parent="." unique_id=925639159]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=92051740]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.44089e-16, 0.0985413)
+shape = SubResource("BoxShape3D_nweix")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=107871946]
+libraries/ = SubResource("AnimationLibrary_wa3ch")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

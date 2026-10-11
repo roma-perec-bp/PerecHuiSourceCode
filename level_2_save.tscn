@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://bghrp3d181kd5"]
+
+[ext_resource type="Script" uid="uid://clgsq12xehrvs" path="res://level_2_save.gd" id="1_jo2t3"]
+[ext_resource type="FontFile" uid="uid://bhxx1wiq3g7dv" path="res://Comic Sans MS Pixel.ttf" id="2_6c66a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wvt5g"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_k484e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wk3st"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4f3o7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pkrir"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xqq5w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i4use"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hwv6m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bx0x1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uw755"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s2rgl"]
+
+[node name="Control" type="Control" unique_id=1627457120]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jo2t3")
+
+[node name="Label" type="Label" parent="." unique_id=2021186974]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -304.0
+offset_top = -65.0
+offset_right = 304.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_6c66a")
+theme_override_font_sizes/font_size = 29
+text = "Продолжить с контрольной точки или начать заново?"
+horizontal_alignment = 1
+
+[node name="start" type="Button" parent="." unique_id=377051156]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 274.0
+offset_right = 242.0
+offset_bottom = 343.0
+focus_neighbor_left = NodePath("../start2")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath("../start2")
+focus_neighbor_bottom = NodePath(".")
+theme_override_colors/font_color = Color(0.5211406, 0.5211406, 0.5211405, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.2123048, 0.21230483, 0.21230477, 1)
+theme_override_fonts/font = ExtResource("2_6c66a")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wvt5g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_k484e")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wk3st")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_4f3o7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pkrir")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_xqq5w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_i4use")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_hwv6m")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bx0x1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_uw755")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s2rgl")
+text = "Продолжить"
+
+[node name="start2" type="Button" parent="." unique_id=225398997]
+layout_mode = 0
+offset_left = 393.0
+offset_top = 274.0
+offset_right = 586.0
+offset_bottom = 343.0
+focus_neighbor_left = NodePath("../start")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath("../start")
+focus_neighbor_bottom = NodePath(".")
+theme_override_colors/font_color = Color(0.39, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.094720505, 4.737871e-08, 1.35367735e-08, 1)
+theme_override_fonts/font = ExtResource("2_6c66a")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wvt5g")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_k484e")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_wk3st")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_4f3o7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_pkrir")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_xqq5w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_i4use")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_hwv6m")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bx0x1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_uw755")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_s2rgl")
+text = "Заново"
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="start2" to="." method="_on_start_2_pressed"]

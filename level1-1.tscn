@@ -1,0 +1,3344 @@
+[gd_scene format=3 uid="uid://cjqifpcqq5fd4"]
+
+[ext_resource type="Script" uid="uid://do34u8ttxdp3g" path="res://level1-1Script.gd" id="1_0kkft"]
+[ext_resource type="FontFile" uid="uid://bhxx1wiq3g7dv" path="res://Comic Sans MS Pixel.ttf" id="1_3ioe6"]
+[ext_resource type="Texture2D" uid="uid://dadf1lgslwspm" path="res://floor texture 1.png" id="1_8xaml"]
+[ext_resource type="Script" uid="uid://87uoui0nroiy" path="res://player.gd" id="2_4hljj"]
+[ext_resource type="Texture2D" uid="uid://cm2mr2uhgdues" path="res://glazok.png" id="2_jxef1"]
+[ext_resource type="Shader" uid="uid://gp34b3oby04j" path="res://dithercam.gdshader" id="3_psalg"]
+[ext_resource type="Texture2D" uid="uid://bfp6m5cow5f1g" path="res://wall 1-1 windows.png" id="4_3asco"]
+[ext_resource type="Texture2D" uid="uid://5uqglep6pfc0" path="res://bpx.png" id="4_38tg0"]
+[ext_resource type="Script" uid="uid://bbnrop8qv3xxh" path="res://pause.gd" id="4_auxjk"]
+[ext_resource type="Texture2D" uid="uid://d0lm7u1o7sarx" path="res://wall 1-1.png" id="5_i2igo"]
+[ext_resource type="FontFile" uid="uid://da01eyw51ur8y" path="res://HouseofTerror.ttf" id="6_0qadp"]
+[ext_resource type="Texture2D" uid="uid://bac0hxcqfvdq2" path="res://wall 1-1 toilet.png" id="6_4omra"]
+[ext_resource type="Texture2D" uid="uid://c426g5lrwgulu" path="res://wall 1-1 door.png" id="6_mr7in"]
+[ext_resource type="Script" uid="uid://cds6qpiokfabv" path="res://options.gd" id="7_clbgw"]
+[ext_resource type="Texture2D" uid="uid://gwlv7bl1pu5k" path="res://exit wall 1-1.png" id="7_l8omh"]
+[ext_resource type="Texture2D" uid="uid://cadq0bw2y153c" path="res://exit door 1-1.png" id="8_krw3s"]
+[ext_resource type="Texture2D" uid="uid://0lwlxls0f6nf" path="res://hui chek.png" id="8_v5t3u"]
+[ext_resource type="Texture2D" uid="uid://desa8jt3hwpc1" path="res://hui unchek.png" id="9_gm8e5"]
+[ext_resource type="Texture2D" uid="uid://dprheoucd1w37" path="res://kitchen table texture.png" id="10_dwtl0"]
+[ext_resource type="Texture2D" uid="uid://cm3oj2xyu8bit" path="res://circle hui.png" id="10_ugyqf"]
+[ext_resource type="Texture2D" uid="uid://csh54x24j7xla" path="res://toilet.png" id="11_4t7rh"]
+[ext_resource type="Texture2D" uid="uid://b0lwrrlst2h4p" path="res://ceiling 1-1.png" id="11_irq5n"]
+[ext_resource type="AudioStream" uid="uid://dat7b20g3uqh2" path="res://hui_pause.wav" id="11_v5t3u"]
+[ext_resource type="Texture2D" uid="uid://carsfiqmga08l" path="res://grassTexture.png" id="12_8dyyn"]
+[ext_resource type="Texture2D" uid="uid://cqio70wpb4i0x" path="res://fridge.png" id="12_v21hq"]
+[ext_resource type="Texture2D" uid="uid://bfaxh14xho34n" path="res://bread.png" id="14_hnfq4"]
+[ext_resource type="AudioStream" uid="uid://bjex74qx7jfh2" path="res://talkMe.wav" id="15_3ibgb"]
+[ext_resource type="Texture2D" uid="uid://qtp6brsrarv2" path="res://soup.png" id="15_g7njp"]
+[ext_resource type="Texture2D" uid="uid://dnooq50dkm21c" path="res://milk.png" id="16_s7lei"]
+[ext_resource type="Texture2D" uid="uid://doa2qkuhw42kt" path="res://laptop texture.png" id="17_4l8l7"]
+[ext_resource type="Texture2D" uid="uid://dmmd3u4g60ap1" path="res://pc texture.png" id="18_n6p2k"]
+[ext_resource type="Texture2D" uid="uid://muq2ae6dxcdj" path="res://bedTexture.png" id="20_s34yj"]
+[ext_resource type="Texture2D" uid="uid://dc7qbec0ctp8v" path="res://dakimakuru texture.png" id="21_w4q4w"]
+[ext_resource type="Texture2D" uid="uid://cosskgt7r1dmm" path="res://nightmare.png" id="24_wjrst"]
+[ext_resource type="AudioStream" uid="uid://5q6uuofm8nj8" path="res://ambience/1-1.wav" id="26_gikj4"]
+[ext_resource type="AudioStream" uid="uid://xuoyo8ihkp3y" path="res://skibidi_toilet.wav" id="26_gm8e5"]
+[ext_resource type="AudioStream" uid="uid://cakwicsmtr08p" path="res://Cancelled.wav" id="27_e4x06"]
+[ext_resource type="Texture2D" uid="uid://bjdmkdsqfud2a" path="res://hui_taking_look.png" id="27_jxef1"]
+[ext_resource type="AudioStream" uid="uid://chb7fb4qi4d1m" path="res://distract1.wav" id="28_l3lpx"]
+[ext_resource type="AudioStream" uid="uid://jen6lpxunow1" path="res://distract2.wav" id="29_s4vyc"]
+[ext_resource type="AudioStream" uid="uid://cdouwj7mmvakv" path="res://distract3.wav" id="30_2vem7"]
+[ext_resource type="AudioStream" uid="uid://dwijhwj45j1bg" path="res://suspense1-1.wav" id="31_m3vvr"]
+[ext_resource type="AudioStream" uid="uid://doludi3o6d81y" path="res://1-1end.wav" id="33_uu5rm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oxj6o"]
+bg_color = Color(0.446544, 0.0340685, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6x5x4"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+anti_aliasing = false
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_auxjk"]
+texture = ExtResource("4_38tg0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0qadp"]
+texture = ExtResource("4_38tg0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gb6y0"]
+texture = ExtResource("4_38tg0")
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_p83e5"]
+color = Color(1, 0, 0, 1)
+thickness = 5
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ahk7q"]
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_45o8b"]
+color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gsyup"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8not7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_46cwk"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_j0c4s"]
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Sky" id="Sky_qssvl"]
+sky_material = SubResource("ProceduralSkyMaterial_j0c4s")
+
+[sub_resource type="Environment" id="Environment_kdxtd"]
+background_mode = 2
+sky = SubResource("Sky_qssvl")
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_sky_contribution = 0.0
+tonemap_mode = 2
+fog_enabled = true
+fog_light_color = Color(0, 0, 0, 1)
+fog_light_energy = 0.0
+fog_density = 0.21
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e8442"]
+shading_mode = 0
+albedo_texture = ExtResource("12_8dyyn")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_e7a1s"]
+material = SubResource("StandardMaterial3D_e8442")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mnhrw"]
+albedo_texture = ExtResource("1_8xaml")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ji1ky"]
+material = SubResource("StandardMaterial3D_mnhrw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_teab0"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+albedo_texture = ExtResource("4_3asco")
+texture_filter = 0
+texture_repeat = false
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wmxhm"]
+material = SubResource("StandardMaterial3D_teab0")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_sgysj"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_usdux"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_oiich"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kk3xx"]
+shading_mode = 0
+albedo_texture = ExtResource("5_i2igo")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_dqjwa"]
+material = SubResource("StandardMaterial3D_kk3xx")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_3l7u6"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_l8w7g"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_uos6l"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ioay5"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_bo1wi"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_simja"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_eyydn"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_1a3ct"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_mqu20"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ccbdc"]
+albedo_texture = ExtResource("6_4omra")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_64eru"]
+material = SubResource("StandardMaterial3D_ccbdc")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a50oh"]
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+albedo_texture = ExtResource("6_mr7in")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_x3o27"]
+material = SubResource("StandardMaterial3D_a50oh")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_evi1y"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vowlb"]
+albedo_texture = ExtResource("7_l8omh")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nk5c1"]
+material = SubResource("StandardMaterial3D_vowlb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7v63f"]
+albedo_texture = ExtResource("8_krw3s")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_68gm1"]
+material = SubResource("StandardMaterial3D_7v63f")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0he50"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_j2utk"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2cwie"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_bpsp8"]
+data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m32ho"]
+shading_mode = 0
+albedo_texture = ExtResource("11_irq5n")
+texture_filter = 0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_r8gms"]
+material = SubResource("StandardMaterial3D_m32ho")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g8vs8"]
+albedo_texture = ExtResource("10_dwtl0")
+uv1_scale = Vector3(3.655, 3.655, 3.655)
+texture_filter = 0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gm8e5"]
+size = Vector3(5, 3, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cyi0r"]
+size = Vector3(0.59314, 1.29639, 0.685669)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yf3r3"]
+render_priority = 0
+shader = ExtResource("3_psalg")
+shader_parameter/enable_fog = false
+shader_parameter/fog_color = Color(0, 0, 0, 1)
+shader_parameter/noise_color = Color(0, 0, 0, 1)
+shader_parameter/fog_distance = 10.0
+shader_parameter/fog_fade_range = 18.0
+shader_parameter/enable_noise = false
+shader_parameter/noise_time_fac = 4.0
+shader_parameter/enable_color_limitation = true
+shader_parameter/color_levels = 26
+shader_parameter/enable_dithering = true
+shader_parameter/dither_strength = 0.6
+
+[sub_resource type="BoxMesh" id="BoxMesh_eo04v"]
+material = SubResource("ShaderMaterial_yf3r3")
+size = Vector3(10, 10, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uso2q"]
+size = Vector3(1, 1, 0.851685)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v5t3u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gyecv"]
+size = Vector3(0.700684, 1, 0.740723)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ugyqf"]
+size = Vector3(1.1484375, 1, 1.0878906)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2htkg"]
+shading_mode = 0
+albedo_texture = ExtResource("10_dwtl0")
+uv1_scale = Vector3(4.65, 4.65, 4.65)
+texture_filter = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wbwge"]
+shading_mode = 0
+albedo_texture = ExtResource("17_4l8l7")
+texture_filter = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u4ij0"]
+shading_mode = 0
+diffuse_mode = 1
+specular_mode = 2
+disable_fog = true
+albedo_texture = ExtResource("18_n6p2k")
+texture_filter = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_klkwl"]
+albedo_color = Color(0, 0, 0, 1)
+backlight = Color(1, 1, 1, 1)
+refraction_scale = 0.13
+grow_amount = 16.0
+distance_fade_max_distance = 2122.67
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ngh0s"]
+albedo_texture = ExtResource("20_s34yj")
+texture_filter = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gm8e5"]
+albedo_texture = ExtResource("21_w4q4w")
+uv1_scale = Vector3(1.38, 1.38, 1.38)
+uv1_offset = Vector3(-0.165, -0.115, 0)
+texture_filter = 0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_vcxvf"]
+material = SubResource("StandardMaterial3D_gm8e5")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_13bdy"]
+size = Vector3(2.09467, 1.95215, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_p83e5"]
+size = Vector3(2.0612183, 1.0859375, 1.6699219)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2gh4x"]
+albedo_texture = ExtResource("10_dwtl0")
+texture_filter = 0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_yvdhl"]
+size = Vector3(1.30444, 2.04211, 1.15771)
+
+[sub_resource type="Animation" id="Animation_a5dvo"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("behindGlassJump")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.0282409, 2.5559, -11.9522)
+
+[sub_resource type="Animation" id="Animation_72j5w"]
+resource_name = "jump"
+length = 10.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("behindGlassJump")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.0282409, 2.5559, -11.9522, 1, 1, 0.0282409, 2.5559, -11.9522, 10, 1, 0.028, 2.556, -100)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5k1q8"]
+_data = {
+&"RESET": SubResource("Animation_a5dvo"),
+&"jump": SubResource("Animation_72j5w")
+}
+
+[sub_resource type="Animation" id="Animation_rk3av"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mainJumpscare")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 18.402, 2.256, 7.26)
+
+[sub_resource type="Animation" id="Animation_syub0"]
+resource_name = "jump2"
+length = 10.0
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("mainJumpscare")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 18.402, 2.256, 7.26, 10, 1, 18.402, 2.256, 296.79)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qk6ps"]
+_data = {
+&"RESET": SubResource("Animation_rk3av"),
+&"jump2": SubResource("Animation_syub0")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_an3b2"]
+size = Vector3(2.51862, 3.15381, 5.15417)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_24sng"]
+size = Vector3(1, 1, 5.62933)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hyd6k"]
+size = Vector3(3, 4, 2)
+
+[node name="Node3D" type="Node3D" unique_id=472059138]
+script = ExtResource("1_0kkft")
+
+[node name="hud" type="Control" parent="." unique_id=295834718]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 641.0
+offset_bottom = 482.0
+
+[node name="glazok" type="TextureRect" parent="hud" unique_id=1786475382]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jxef1")
+
+[node name="instruct2" type="Label" parent="hud" unique_id=373414312]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -278.5
+offset_top = -30.0
+offset_right = 279.5
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 26
+text = "НАЖМИ \"E\" ЧТОБЫ ВЗАИМОДЕЙСТОВАТЬ С ДВЕРЬЮ"
+horizontal_alignment = 1
+
+[node name="tasks" type="Label" parent="hud" unique_id=778828275]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -307.5
+offset_top = -235.0
+offset_right = 100.5
+offset_bottom = -174.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 26
+
+[node name="bg" type="ColorRect" parent="hud" unique_id=1528110960]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="dialogueBg" type="ColorRect" parent="hud" unique_id=751669166]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -82.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0, 0, 0, 0.564706)
+
+[node name="dialogueTxt" type="Label" parent="hud" unique_id=318065359]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 396.0
+offset_right = 638.0
+offset_bottom = 482.0
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="nextDialogue" type="Timer" parent="hud" unique_id=506299255]
+
+[node name="nextCharacter" type="Timer" parent="hud" unique_id=1975300834]
+
+[node name="masterBar" type="ProgressBar" parent="hud" unique_id=1978936140]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -127.5
+offset_top = 106.5
+offset_right = 127.5
+offset_bottom = 133.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_oxj6o")
+theme_override_styles/fill = SubResource("StyleBoxFlat_6x5x4")
+value = 17.34
+show_percentage = false
+
+[node name="masterText" type="Label" parent="hud" unique_id=479579775]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -204.0
+offset_top = 33.5
+offset_right = 204.0
+offset_bottom = 94.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 26
+text = "Мастурбируй!
+Долби ПРОБЕЛ чтобы заполнить полосу"
+horizontal_alignment = 1
+
+[node name="instruct" type="Label" parent="hud" unique_id=477070999]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -203.5
+offset_top = -30.0
+offset_right = 204.5
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 26
+text = "НАЖМИ \"E\" ЧТОБЫ СЕСТЬ"
+horizontal_alignment = 1
+
+[node name="pause" type="Control" parent="hud" unique_id=1387773862]
+process_mode = 2
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_auxjk")
+
+[node name="ColorRect" type="ColorRect" parent="hud/pause" unique_id=1769384275]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.40392157)
+
+[node name="red" type="ColorRect" parent="hud/pause" unique_id=120612997]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.11
+offset_top = -160.325
+offset_right = 123.924866
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 1)
+
+[node name="bg" type="ColorRect" parent="hud/pause" unique_id=1917610573]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.5
+offset_top = -159.0
+offset_right = 121.5
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="resume" type="Button" parent="hud/pause" unique_id=1137181220]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.5
+offset_top = -89.0
+offset_right = 82.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.37823159, 7.189531e-07, 1.92523e-07, 1)
+theme_override_colors/font_hover_color = Color(0.5726692, 1.0227784e-06, 1.92523e-07, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxTexture_auxjk")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0qadp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gb6y0")
+text = "RESUME"
+
+[node name="options" type="Button" parent="hud/pause" unique_id=1862468637]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.5
+offset_top = -25.0
+offset_right = 82.0
+offset_bottom = 27.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.37823159, 7.189531e-07, 1.92523e-07, 1)
+theme_override_colors/font_hover_color = Color(0.5726692, 1.0227784e-06, 1.92523e-07, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxTexture_auxjk")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0qadp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gb6y0")
+text = "OPTIONS"
+
+[node name="exit" type="Button" parent="hud/pause" unique_id=866849896]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -86.5
+offset_top = 42.0
+offset_right = 82.0
+offset_bottom = 94.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.37823159, 7.189531e-07, 1.92523e-07, 1)
+theme_override_colors/font_hover_color = Color(0.5726692, 1.0227784e-06, 1.92523e-07, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/normal = SubResource("StyleBoxTexture_auxjk")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0qadp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_gb6y0")
+text = "QUIT"
+
+[node name="Label" type="Label" parent="hud/pause" unique_id=1320628827]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -118.5
+offset_top = -154.0
+offset_right = 118.5
+offset_bottom = -99.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_0qadp")
+text = "Paused..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="options_menu" type="Control" parent="hud/pause" unique_id=1499065595]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("7_clbgw")
+
+[node name="red" type="ColorRect" parent="hud/pause/options_menu" unique_id=1440157240]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -283.845
+offset_top = -200.67
+offset_right = 284.39
+offset_bottom = 201.61505
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0, 0, 1)
+
+[node name="bg" type="ColorRect" parent="hud/pause/options_menu" unique_id=1440469898]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -281.5
+offset_top = -197.5
+offset_right = 281.5
+offset_bottom = 197.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="vsync_txt" type="Label" parent="hud/pause/options_menu" unique_id=1405567752]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 63.0
+offset_right = 183.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 29
+text = "Vsync"
+
+[node name="full_txt" type="Label" parent="hud/pause/options_menu" unique_id=712868329]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 107.0
+offset_right = 191.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 29
+text = "Full-Screen"
+
+[node name="flashing txt" type="Label" parent="hud/pause/options_menu" unique_id=2146912052]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 153.0
+offset_right = 288.0
+offset_bottom = 185.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 29
+text = "Flashing Lights"
+
+[node name="Sense txt" type="Label" parent="hud/pause/options_menu" unique_id=872800339]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 202.0
+offset_right = 340.0
+offset_bottom = 234.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 29
+text = "Mouse Sensivity"
+
+[node name="music volume" type="Label" parent="hud/pause/options_menu" unique_id=1375395800]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 250.0
+offset_right = 340.0
+offset_bottom = 282.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 29
+text = "Music Volume"
+
+[node name="music volume2" type="Label" parent="hud/pause/options_menu" unique_id=1347881261]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 298.0
+offset_right = 340.0
+offset_bottom = 330.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 29
+text = "SFX Volume"
+
+[node name="vsync_check" type="CheckBox" parent="hud/pause/options_menu" unique_id=1561046291]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -171.0
+offset_right = -91.0
+offset_bottom = -147.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/checked = ExtResource("8_v5t3u")
+theme_override_icons/unchecked = ExtResource("9_gm8e5")
+
+[node name="full_check" type="CheckBox" parent="hud/pause/options_menu" unique_id=677229860]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -91.0
+offset_top = -128.0
+offset_right = -67.0
+offset_bottom = -104.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/checked = ExtResource("8_v5t3u")
+theme_override_icons/unchecked = ExtResource("9_gm8e5")
+
+[node name="flash_check" type="CheckBox" parent="hud/pause/options_menu" unique_id=1912809694]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -79.0
+offset_top = -82.0
+offset_right = -55.0
+offset_bottom = -58.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/checked = ExtResource("8_v5t3u")
+theme_override_icons/unchecked = ExtResource("9_gm8e5")
+
+[node name="sense_slider" type="HSlider" parent="hud/pause/options_menu" unique_id=2051702968]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 207.0
+offset_right = 528.0
+offset_bottom = 229.0
+theme_override_icons/grabber = ExtResource("10_ugyqf")
+theme_override_icons/grabber_highlight = ExtResource("10_ugyqf")
+theme_override_icons/grabber_disabled = ExtResource("10_ugyqf")
+theme_override_styles/slider = SubResource("StyleBoxLine_p83e5")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_ahk7q")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_45o8b")
+min_value = 50.0
+max_value = 1000.0
+value = 50.0
+
+[node name="music_slider" type="HSlider" parent="hud/pause/options_menu" unique_id=499390237]
+layout_mode = 0
+offset_left = 225.0
+offset_top = 258.0
+offset_right = 497.0
+offset_bottom = 280.0
+theme_override_icons/grabber = ExtResource("10_ugyqf")
+theme_override_icons/grabber_highlight = ExtResource("10_ugyqf")
+theme_override_icons/grabber_disabled = ExtResource("10_ugyqf")
+theme_override_styles/slider = SubResource("StyleBoxLine_p83e5")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_ahk7q")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_45o8b")
+min_value = -24.0
+max_value = 0.0
+
+[node name="sound_slider" type="HSlider" parent="hud/pause/options_menu" unique_id=1142007169]
+layout_mode = 0
+offset_left = 223.0
+offset_top = 306.0
+offset_right = 495.0
+offset_bottom = 328.0
+theme_override_icons/grabber = ExtResource("10_ugyqf")
+theme_override_icons/grabber_highlight = ExtResource("10_ugyqf")
+theme_override_icons/grabber_disabled = ExtResource("10_ugyqf")
+theme_override_styles/slider = SubResource("StyleBoxLine_p83e5")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_ahk7q")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_45o8b")
+min_value = -24.0
+max_value = 0.0
+
+[node name="Button" type="Button" parent="hud/pause/options_menu" unique_id=1786211334]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.0
+offset_top = 144.0
+offset_right = 63.0
+offset_bottom = 189.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.88, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0.016666412, 1)
+theme_override_colors/font_pressed_color = Color(0.19, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0.49, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_3ioe6")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gsyup")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8not7")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_46cwk")
+text = "BACK"
+
+[node name="ColorRect2" type="ColorRect" parent="hud/pause" unique_id=1206898705]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="sound" type="AudioStreamPlayer" parent="hud/pause" unique_id=1920570427]
+stream = ExtResource("11_v5t3u")
+volume_db = -24.144
+bus = &"Sound"
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1660840105]
+environment = SubResource("Environment_kdxtd")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=50154315]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+
+[node name="forest" type="Node3D" parent="." unique_id=2086921148]
+
+[node name="forestGround" type="MeshInstance3D" parent="forest" unique_id=1343828103]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround9" type="MeshInstance3D" parent="forest" unique_id=33100629]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround10" type="MeshInstance3D" parent="forest" unique_id=1961763253]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround11" type="MeshInstance3D" parent="forest" unique_id=616504073]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround12" type="MeshInstance3D" parent="forest" unique_id=669515644]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround13" type="MeshInstance3D" parent="forest" unique_id=222560373]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround2" type="MeshInstance3D" parent="forest" unique_id=804569927]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround3" type="MeshInstance3D" parent="forest" unique_id=1169294079]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround4" type="MeshInstance3D" parent="forest" unique_id=10088053]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround5" type="MeshInstance3D" parent="forest" unique_id=660222240]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround6" type="MeshInstance3D" parent="forest" unique_id=1149372225]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround7" type="MeshInstance3D" parent="forest" unique_id=304225375]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround8" type="MeshInstance3D" parent="forest" unique_id=913037977]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 20, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround118" type="MeshInstance3D" parent="forest" unique_id=1588713341]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround119" type="MeshInstance3D" parent="forest" unique_id=1727277408]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround120" type="MeshInstance3D" parent="forest" unique_id=321588377]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround121" type="MeshInstance3D" parent="forest" unique_id=2046713140]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround122" type="MeshInstance3D" parent="forest" unique_id=1146343090]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround123" type="MeshInstance3D" parent="forest" unique_id=844893925]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround124" type="MeshInstance3D" parent="forest" unique_id=1297404257]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround125" type="MeshInstance3D" parent="forest" unique_id=2004017982]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround126" type="MeshInstance3D" parent="forest" unique_id=502608928]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround127" type="MeshInstance3D" parent="forest" unique_id=1599506087]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround128" type="MeshInstance3D" parent="forest" unique_id=77552117]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround129" type="MeshInstance3D" parent="forest" unique_id=1405434457]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround130" type="MeshInstance3D" parent="forest" unique_id=185521607]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround131" type="MeshInstance3D" parent="forest" unique_id=1843407796]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround132" type="MeshInstance3D" parent="forest" unique_id=675590517]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround133" type="MeshInstance3D" parent="forest" unique_id=1222467559]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround134" type="MeshInstance3D" parent="forest" unique_id=1065865345]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround135" type="MeshInstance3D" parent="forest" unique_id=1969687878]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround136" type="MeshInstance3D" parent="forest" unique_id=2128598132]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround137" type="MeshInstance3D" parent="forest" unique_id=161105393]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround138" type="MeshInstance3D" parent="forest" unique_id=441966030]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround139" type="MeshInstance3D" parent="forest" unique_id=1567091110]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround140" type="MeshInstance3D" parent="forest" unique_id=1817337110]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround141" type="MeshInstance3D" parent="forest" unique_id=454708050]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround142" type="MeshInstance3D" parent="forest" unique_id=482804788]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround143" type="MeshInstance3D" parent="forest" unique_id=400202531]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround144" type="MeshInstance3D" parent="forest" unique_id=832523752]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround145" type="MeshInstance3D" parent="forest" unique_id=1931217034]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround146" type="MeshInstance3D" parent="forest" unique_id=223009337]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround147" type="MeshInstance3D" parent="forest" unique_id=462947399]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround148" type="MeshInstance3D" parent="forest" unique_id=1891299298]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround149" type="MeshInstance3D" parent="forest" unique_id=1623140497]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround150" type="MeshInstance3D" parent="forest" unique_id=2073339419]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround151" type="MeshInstance3D" parent="forest" unique_id=297164897]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround152" type="MeshInstance3D" parent="forest" unique_id=1018479802]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround153" type="MeshInstance3D" parent="forest" unique_id=292898625]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround154" type="MeshInstance3D" parent="forest" unique_id=1058905104]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround155" type="MeshInstance3D" parent="forest" unique_id=690832787]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround156" type="MeshInstance3D" parent="forest" unique_id=1548546913]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround157" type="MeshInstance3D" parent="forest" unique_id=913192276]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround158" type="MeshInstance3D" parent="forest" unique_id=774834009]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround159" type="MeshInstance3D" parent="forest" unique_id=1696753528]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround160" type="MeshInstance3D" parent="forest" unique_id=1159619787]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround161" type="MeshInstance3D" parent="forest" unique_id=684390791]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround162" type="MeshInstance3D" parent="forest" unique_id=55491910]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround163" type="MeshInstance3D" parent="forest" unique_id=130792117]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround164" type="MeshInstance3D" parent="forest" unique_id=1660012694]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround165" type="MeshInstance3D" parent="forest" unique_id=1279256231]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround241" type="MeshInstance3D" parent="forest" unique_id=1896322757]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround242" type="MeshInstance3D" parent="forest" unique_id=1564782675]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround243" type="MeshInstance3D" parent="forest" unique_id=1298527104]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround244" type="MeshInstance3D" parent="forest" unique_id=1107886295]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround245" type="MeshInstance3D" parent="forest" unique_id=415627494]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround246" type="MeshInstance3D" parent="forest" unique_id=791629089]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround247" type="MeshInstance3D" parent="forest" unique_id=1689319875]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround248" type="MeshInstance3D" parent="forest" unique_id=141691402]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround249" type="MeshInstance3D" parent="forest" unique_id=533509135]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround250" type="MeshInstance3D" parent="forest" unique_id=2136253232]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround251" type="MeshInstance3D" parent="forest" unique_id=568040952]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround252" type="MeshInstance3D" parent="forest" unique_id=211162137]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround253" type="MeshInstance3D" parent="forest" unique_id=637987075]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround254" type="MeshInstance3D" parent="forest" unique_id=1922525242]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround255" type="MeshInstance3D" parent="forest" unique_id=1153926149]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround256" type="MeshInstance3D" parent="forest" unique_id=666748313]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround257" type="MeshInstance3D" parent="forest" unique_id=1382329058]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround258" type="MeshInstance3D" parent="forest" unique_id=1174542248]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround259" type="MeshInstance3D" parent="forest" unique_id=1947833163]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround260" type="MeshInstance3D" parent="forest" unique_id=814625834]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround261" type="MeshInstance3D" parent="forest" unique_id=730931440]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround262" type="MeshInstance3D" parent="forest" unique_id=413758419]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround263" type="MeshInstance3D" parent="forest" unique_id=793769399]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround264" type="MeshInstance3D" parent="forest" unique_id=1534273571]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround265" type="MeshInstance3D" parent="forest" unique_id=1538400617]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround266" type="MeshInstance3D" parent="forest" unique_id=735595288]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround267" type="MeshInstance3D" parent="forest" unique_id=593253964]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround268" type="MeshInstance3D" parent="forest" unique_id=1310363939]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround269" type="MeshInstance3D" parent="forest" unique_id=606905019]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround270" type="MeshInstance3D" parent="forest" unique_id=2092446530]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround271" type="MeshInstance3D" parent="forest" unique_id=481707008]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround272" type="MeshInstance3D" parent="forest" unique_id=481909954]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround273" type="MeshInstance3D" parent="forest" unique_id=1987138515]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround274" type="MeshInstance3D" parent="forest" unique_id=1235976350]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround275" type="MeshInstance3D" parent="forest" unique_id=1876992339]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround276" type="MeshInstance3D" parent="forest" unique_id=1960331912]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround277" type="MeshInstance3D" parent="forest" unique_id=86868465]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround278" type="MeshInstance3D" parent="forest" unique_id=1052106937]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround279" type="MeshInstance3D" parent="forest" unique_id=1922128520]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -32)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround280" type="MeshInstance3D" parent="forest" unique_id=195073137]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround281" type="MeshInstance3D" parent="forest" unique_id=223408893]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround282" type="MeshInstance3D" parent="forest" unique_id=1515965952]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround283" type="MeshInstance3D" parent="forest" unique_id=551917899]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround284" type="MeshInstance3D" parent="forest" unique_id=1470964527]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround285" type="MeshInstance3D" parent="forest" unique_id=1866034493]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround286" type="MeshInstance3D" parent="forest" unique_id=1338628428]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround287" type="MeshInstance3D" parent="forest" unique_id=1972660145]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround288" type="MeshInstance3D" parent="forest" unique_id=2006812605]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround289" type="MeshInstance3D" parent="forest" unique_id=1782361769]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround290" type="MeshInstance3D" parent="forest" unique_id=404343382]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround291" type="MeshInstance3D" parent="forest" unique_id=963481769]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround292" type="MeshInstance3D" parent="forest" unique_id=1203367801]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -36)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround293" type="MeshInstance3D" parent="forest" unique_id=1492494629]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround294" type="MeshInstance3D" parent="forest" unique_id=400182163]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround295" type="MeshInstance3D" parent="forest" unique_id=827247446]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround296" type="MeshInstance3D" parent="forest" unique_id=1650738712]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround297" type="MeshInstance3D" parent="forest" unique_id=1880314570]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround298" type="MeshInstance3D" parent="forest" unique_id=1691248993]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround299" type="MeshInstance3D" parent="forest" unique_id=1857240638]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround300" type="MeshInstance3D" parent="forest" unique_id=321800663]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround301" type="MeshInstance3D" parent="forest" unique_id=1802246411]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround302" type="MeshInstance3D" parent="forest" unique_id=1314965223]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround303" type="MeshInstance3D" parent="forest" unique_id=607757623]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround304" type="MeshInstance3D" parent="forest" unique_id=2036205097]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround305" type="MeshInstance3D" parent="forest" unique_id=95636150]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -40)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround166" type="MeshInstance3D" parent="forest" unique_id=761839191]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround169" type="MeshInstance3D" parent="forest" unique_id=1373218703]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround170" type="MeshInstance3D" parent="forest" unique_id=1046869364]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround171" type="MeshInstance3D" parent="forest" unique_id=668161093]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround172" type="MeshInstance3D" parent="forest" unique_id=670297046]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround173" type="MeshInstance3D" parent="forest" unique_id=1621159824]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround174" type="MeshInstance3D" parent="forest" unique_id=1821628380]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround175" type="MeshInstance3D" parent="forest" unique_id=412320789]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround176" type="MeshInstance3D" parent="forest" unique_id=1450009050]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround177" type="MeshInstance3D" parent="forest" unique_id=187235870]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround178" type="MeshInstance3D" parent="forest" unique_id=2104816794]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround179" type="MeshInstance3D" parent="forest" unique_id=719823120]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround180" type="MeshInstance3D" parent="forest" unique_id=736077599]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround181" type="MeshInstance3D" parent="forest" unique_id=836124070]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround182" type="MeshInstance3D" parent="forest" unique_id=1997756398]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround183" type="MeshInstance3D" parent="forest" unique_id=2049001877]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround184" type="MeshInstance3D" parent="forest" unique_id=886181069]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround185" type="MeshInstance3D" parent="forest" unique_id=1474094501]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround186" type="MeshInstance3D" parent="forest" unique_id=29424672]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround187" type="MeshInstance3D" parent="forest" unique_id=613527049]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround188" type="MeshInstance3D" parent="forest" unique_id=1662101954]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround189" type="MeshInstance3D" parent="forest" unique_id=642140712]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround190" type="MeshInstance3D" parent="forest" unique_id=1591980817]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround191" type="MeshInstance3D" parent="forest" unique_id=111414035]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround192" type="MeshInstance3D" parent="forest" unique_id=1969166899]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround193" type="MeshInstance3D" parent="forest" unique_id=1298584995]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround194" type="MeshInstance3D" parent="forest" unique_id=1744858309]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround195" type="MeshInstance3D" parent="forest" unique_id=697511197]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround196" type="MeshInstance3D" parent="forest" unique_id=1675368860]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround197" type="MeshInstance3D" parent="forest" unique_id=477352008]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround198" type="MeshInstance3D" parent="forest" unique_id=911878094]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround199" type="MeshInstance3D" parent="forest" unique_id=471150171]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround200" type="MeshInstance3D" parent="forest" unique_id=812561507]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround201" type="MeshInstance3D" parent="forest" unique_id=1996449270]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround202" type="MeshInstance3D" parent="forest" unique_id=1127805017]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround203" type="MeshInstance3D" parent="forest" unique_id=1048605983]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround204" type="MeshInstance3D" parent="forest" unique_id=1936306303]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround205" type="MeshInstance3D" parent="forest" unique_id=913378506]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround206" type="MeshInstance3D" parent="forest" unique_id=358653387]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround207" type="MeshInstance3D" parent="forest" unique_id=940190732]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround208" type="MeshInstance3D" parent="forest" unique_id=1767768746]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround209" type="MeshInstance3D" parent="forest" unique_id=2060744962]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround210" type="MeshInstance3D" parent="forest" unique_id=1477269961]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround211" type="MeshInstance3D" parent="forest" unique_id=552613483]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround212" type="MeshInstance3D" parent="forest" unique_id=2028934521]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround213" type="MeshInstance3D" parent="forest" unique_id=1300061637]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround214" type="MeshInstance3D" parent="forest" unique_id=1883817849]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround215" type="MeshInstance3D" parent="forest" unique_id=1677865579]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround216" type="MeshInstance3D" parent="forest" unique_id=1955229771]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround217" type="MeshInstance3D" parent="forest" unique_id=1847847501]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround218" type="MeshInstance3D" parent="forest" unique_id=834057012]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround219" type="MeshInstance3D" parent="forest" unique_id=402050635]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround220" type="MeshInstance3D" parent="forest" unique_id=711368460]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround221" type="MeshInstance3D" parent="forest" unique_id=1003569316]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround222" type="MeshInstance3D" parent="forest" unique_id=522150054]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround223" type="MeshInstance3D" parent="forest" unique_id=290149693]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround224" type="MeshInstance3D" parent="forest" unique_id=515568044]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround225" type="MeshInstance3D" parent="forest" unique_id=1542737335]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround226" type="MeshInstance3D" parent="forest" unique_id=1651894017]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround227" type="MeshInstance3D" parent="forest" unique_id=1662175887]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround228" type="MeshInstance3D" parent="forest" unique_id=1129908593]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround229" type="MeshInstance3D" parent="forest" unique_id=241405480]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround230" type="MeshInstance3D" parent="forest" unique_id=1862615616]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround231" type="MeshInstance3D" parent="forest" unique_id=1117850094]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround232" type="MeshInstance3D" parent="forest" unique_id=1302497687]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround233" type="MeshInstance3D" parent="forest" unique_id=1381733574]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -8, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround234" type="MeshInstance3D" parent="forest" unique_id=580311869]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround235" type="MeshInstance3D" parent="forest" unique_id=207471558]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -16, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround236" type="MeshInstance3D" parent="forest" unique_id=454769031]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -20, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround237" type="MeshInstance3D" parent="forest" unique_id=729644209]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -24, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround238" type="MeshInstance3D" parent="forest" unique_id=1729014115]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -28, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround239" type="MeshInstance3D" parent="forest" unique_id=200971743]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround240" type="MeshInstance3D" parent="forest" unique_id=642103916]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround167" type="MeshInstance3D" parent="forest" unique_id=313030401]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround168" type="MeshInstance3D" parent="forest" unique_id=1791592978]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -36, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround14" type="MeshInstance3D" parent="forest" unique_id=58561802]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround15" type="MeshInstance3D" parent="forest" unique_id=1771791417]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround16" type="MeshInstance3D" parent="forest" unique_id=1656471627]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround17" type="MeshInstance3D" parent="forest" unique_id=376501489]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround18" type="MeshInstance3D" parent="forest" unique_id=1728078655]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround19" type="MeshInstance3D" parent="forest" unique_id=974728345]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround20" type="MeshInstance3D" parent="forest" unique_id=790691395]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround21" type="MeshInstance3D" parent="forest" unique_id=1144697288]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround22" type="MeshInstance3D" parent="forest" unique_id=1374000567]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround23" type="MeshInstance3D" parent="forest" unique_id=1403132418]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround24" type="MeshInstance3D" parent="forest" unique_id=810307656]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround25" type="MeshInstance3D" parent="forest" unique_id=1052114504]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround26" type="MeshInstance3D" parent="forest" unique_id=1866955882]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 24, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround27" type="MeshInstance3D" parent="forest" unique_id=784700214]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround28" type="MeshInstance3D" parent="forest" unique_id=1397684729]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround29" type="MeshInstance3D" parent="forest" unique_id=1111104608]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround30" type="MeshInstance3D" parent="forest" unique_id=1290469045]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround31" type="MeshInstance3D" parent="forest" unique_id=2048446620]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround32" type="MeshInstance3D" parent="forest" unique_id=1082059487]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround33" type="MeshInstance3D" parent="forest" unique_id=593683044]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround34" type="MeshInstance3D" parent="forest" unique_id=2087412259]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround35" type="MeshInstance3D" parent="forest" unique_id=517499055]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround36" type="MeshInstance3D" parent="forest" unique_id=629212891]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround37" type="MeshInstance3D" parent="forest" unique_id=1635873235]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround38" type="MeshInstance3D" parent="forest" unique_id=1352223713]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround39" type="MeshInstance3D" parent="forest" unique_id=772110445]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 28, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround40" type="MeshInstance3D" parent="forest" unique_id=1741163041]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround41" type="MeshInstance3D" parent="forest" unique_id=335327279]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround42" type="MeshInstance3D" parent="forest" unique_id=2017051555]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround43" type="MeshInstance3D" parent="forest" unique_id=1476807648]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround44" type="MeshInstance3D" parent="forest" unique_id=798429779]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround45" type="MeshInstance3D" parent="forest" unique_id=571693914]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround46" type="MeshInstance3D" parent="forest" unique_id=152359030]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround47" type="MeshInstance3D" parent="forest" unique_id=1490189596]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround48" type="MeshInstance3D" parent="forest" unique_id=845243138]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround49" type="MeshInstance3D" parent="forest" unique_id=701055783]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround50" type="MeshInstance3D" parent="forest" unique_id=2091712772]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround51" type="MeshInstance3D" parent="forest" unique_id=1257937983]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround52" type="MeshInstance3D" parent="forest" unique_id=1191591394]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 32, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround53" type="MeshInstance3D" parent="forest" unique_id=1689745893]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround54" type="MeshInstance3D" parent="forest" unique_id=21724605]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround55" type="MeshInstance3D" parent="forest" unique_id=1000938327]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround56" type="MeshInstance3D" parent="forest" unique_id=993254688]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround57" type="MeshInstance3D" parent="forest" unique_id=2028537704]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround58" type="MeshInstance3D" parent="forest" unique_id=846622665]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround59" type="MeshInstance3D" parent="forest" unique_id=1965527371]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround60" type="MeshInstance3D" parent="forest" unique_id=1520764032]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround61" type="MeshInstance3D" parent="forest" unique_id=1214603123]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround62" type="MeshInstance3D" parent="forest" unique_id=1366927863]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround63" type="MeshInstance3D" parent="forest" unique_id=261351533]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround64" type="MeshInstance3D" parent="forest" unique_id=1891353181]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround65" type="MeshInstance3D" parent="forest" unique_id=1466478858]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 36, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround66" type="MeshInstance3D" parent="forest" unique_id=1271998832]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround67" type="MeshInstance3D" parent="forest" unique_id=1790414641]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround68" type="MeshInstance3D" parent="forest" unique_id=484594999]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround69" type="MeshInstance3D" parent="forest" unique_id=348869317]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround70" type="MeshInstance3D" parent="forest" unique_id=1604360144]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround71" type="MeshInstance3D" parent="forest" unique_id=2038117744]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround72" type="MeshInstance3D" parent="forest" unique_id=221450108]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround73" type="MeshInstance3D" parent="forest" unique_id=282081760]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround74" type="MeshInstance3D" parent="forest" unique_id=2067711280]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround75" type="MeshInstance3D" parent="forest" unique_id=1912730686]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround76" type="MeshInstance3D" parent="forest" unique_id=1972800545]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround77" type="MeshInstance3D" parent="forest" unique_id=209605052]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround78" type="MeshInstance3D" parent="forest" unique_id=1584444340]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 40, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround79" type="MeshInstance3D" parent="forest" unique_id=1750641191]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround80" type="MeshInstance3D" parent="forest" unique_id=209485505]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround81" type="MeshInstance3D" parent="forest" unique_id=401242136]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround82" type="MeshInstance3D" parent="forest" unique_id=196615592]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround83" type="MeshInstance3D" parent="forest" unique_id=1586998055]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround84" type="MeshInstance3D" parent="forest" unique_id=209766587]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround85" type="MeshInstance3D" parent="forest" unique_id=569920312]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround86" type="MeshInstance3D" parent="forest" unique_id=2128733009]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround87" type="MeshInstance3D" parent="forest" unique_id=1369379641]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround88" type="MeshInstance3D" parent="forest" unique_id=849443785]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround89" type="MeshInstance3D" parent="forest" unique_id=1130616201]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround90" type="MeshInstance3D" parent="forest" unique_id=1322166659]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround91" type="MeshInstance3D" parent="forest" unique_id=1029819888]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 44, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround92" type="MeshInstance3D" parent="forest" unique_id=155969143]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround93" type="MeshInstance3D" parent="forest" unique_id=1418143767]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround94" type="MeshInstance3D" parent="forest" unique_id=883583860]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround95" type="MeshInstance3D" parent="forest" unique_id=1478823445]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround96" type="MeshInstance3D" parent="forest" unique_id=658595700]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround97" type="MeshInstance3D" parent="forest" unique_id=1759969282]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround98" type="MeshInstance3D" parent="forest" unique_id=702444624]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround99" type="MeshInstance3D" parent="forest" unique_id=271295668]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround100" type="MeshInstance3D" parent="forest" unique_id=1712865980]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround101" type="MeshInstance3D" parent="forest" unique_id=531086573]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround102" type="MeshInstance3D" parent="forest" unique_id=1631262206]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround103" type="MeshInstance3D" parent="forest" unique_id=834683346]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround104" type="MeshInstance3D" parent="forest" unique_id=832207930]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 48, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround105" type="MeshInstance3D" parent="forest" unique_id=1811532600]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, 8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround106" type="MeshInstance3D" parent="forest" unique_id=150069526]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, 12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround107" type="MeshInstance3D" parent="forest" unique_id=1738132358]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, 16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround108" type="MeshInstance3D" parent="forest" unique_id=1026409895]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, 20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround109" type="MeshInstance3D" parent="forest" unique_id=1517685081]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, 24)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround110" type="MeshInstance3D" parent="forest" unique_id=1138250929]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, 28)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround111" type="MeshInstance3D" parent="forest" unique_id=815831929]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, 4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround112" type="MeshInstance3D" parent="forest" unique_id=746394399]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, 0)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround113" type="MeshInstance3D" parent="forest" unique_id=90851896]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, -4)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround114" type="MeshInstance3D" parent="forest" unique_id=763950779]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, -8)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround115" type="MeshInstance3D" parent="forest" unique_id=1816349679]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, -12)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround116" type="MeshInstance3D" parent="forest" unique_id=344287819]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, -16)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="forestGround117" type="MeshInstance3D" parent="forest" unique_id=1465296419]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 52, 0, -20)
+mesh = SubResource("PlaneMesh_e7a1s")
+skeleton = NodePath("../..")
+
+[node name="houseFloor" type="Node3D" parent="." unique_id=1570533578]
+
+[node name="floor" type="MeshInstance3D" parent="houseFloor" unique_id=939487093]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor2" type="MeshInstance3D" parent="houseFloor" unique_id=2096423070]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -4)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor3" type="MeshInstance3D" parent="houseFloor" unique_id=358941819]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, -8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor4" type="MeshInstance3D" parent="houseFloor" unique_id=349705538]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 4)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor5" type="MeshInstance3D" parent="houseFloor" unique_id=849839573]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor10" type="MeshInstance3D" parent="houseFloor" unique_id=2123994242]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, 8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor11" type="MeshInstance3D" parent="houseFloor" unique_id=189826864]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, 8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor12" type="MeshInstance3D" parent="houseFloor" unique_id=212855873]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8, 0, 4)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor13" type="MeshInstance3D" parent="houseFloor" unique_id=407274456]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, 4)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor14" type="MeshInstance3D" parent="houseFloor" unique_id=1107123644]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, 4)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor15" type="MeshInstance3D" parent="houseFloor" unique_id=165285003]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 16, 0, 8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor16" type="MeshInstance3D" parent="houseFloor" unique_id=1099975270]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 12, 0, 8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor17" type="MeshInstance3D" parent="houseFloor" unique_id=1048387100]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, 8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor18" type="MeshInstance3D" parent="houseFloor" unique_id=1557961339]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 12)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor19" type="MeshInstance3D" parent="houseFloor" unique_id=343337390]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 16)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor6" type="MeshInstance3D" parent="houseFloor" unique_id=294801023]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor7" type="MeshInstance3D" parent="houseFloor" unique_id=141776639]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -8)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor8" type="MeshInstance3D" parent="houseFloor" unique_id=1541529820]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4, 0, -4)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="floor9" type="MeshInstance3D" parent="houseFloor" unique_id=1086491107]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -4, 0, -4)
+mesh = SubResource("PlaneMesh_ji1ky")
+skeleton = NodePath("../..")
+
+[node name="houseWall" type="Node3D" parent="." unique_id=1502168527]
+
+[node name="wall windowed" type="MeshInstance3D" parent="houseWall" unique_id=2032984005]
+transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -2, 0, 2, -8.74228e-08, 0, 2, -10)
+mesh = SubResource("PlaneMesh_wmxhm")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall windowed" unique_id=755184842]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall windowed/StaticBody3D" unique_id=880462452]
+shape = SubResource("ConcavePolygonShape3D_sgysj")
+
+[node name="wall windowed2" type="MeshInstance3D" parent="houseWall" unique_id=58146981]
+transform = Transform3D(-8.74228e-08, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, -8.74228e-08, 3.82137e-15, -6, 2, -8)
+mesh = SubResource("PlaneMesh_wmxhm")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall windowed2" unique_id=1156230817]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall windowed2/StaticBody3D" unique_id=1290022413]
+shape = SubResource("ConcavePolygonShape3D_usdux")
+
+[node name="wall windowed3" type="MeshInstance3D" parent="houseWall" unique_id=401135633]
+transform = Transform3D(2.62268e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 2.62268e-07, -1.14641e-14, 6, 2, -8)
+mesh = SubResource("PlaneMesh_wmxhm")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall windowed3" unique_id=1472911774]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall windowed3/StaticBody3D" unique_id=1398513766]
+shape = SubResource("ConcavePolygonShape3D_oiich")
+
+[node name="wall windowed4" type="MeshInstance3D" parent="houseWall" unique_id=232697365]
+transform = Transform3D(2.62268e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 2.62268e-07, -1.14641e-14, 18, 2, 8)
+mesh = SubResource("PlaneMesh_wmxhm")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall windowed4" unique_id=1262525498]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall windowed4/StaticBody3D" unique_id=150758577]
+shape = SubResource("ConcavePolygonShape3D_oiich")
+
+[node name="wall windowed5" type="MeshInstance3D" parent="houseWall" unique_id=600005980]
+transform = Transform3D(2.62268e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 2.62268e-07, -1.14641e-14, 18, 2, 4)
+mesh = SubResource("PlaneMesh_wmxhm")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall windowed5" unique_id=1784784711]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall windowed5/StaticBody3D" unique_id=301570641]
+shape = SubResource("ConcavePolygonShape3D_oiich")
+
+[node name="wall normal" type="MeshInstance3D" parent="houseWall" unique_id=1121292273]
+transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -2, 0, 2, -8.74228e-08, -4, 2, -10)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal" unique_id=577129064]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal/StaticBody3D" unique_id=397253311]
+shape = SubResource("ConcavePolygonShape3D_3l7u6")
+
+[node name="wall normal4" type="MeshInstance3D" parent="houseWall" unique_id=721387073]
+transform = Transform3D(0, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, 0, -1.77636e-15, -6, 2, -4)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal4" unique_id=503279513]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal4/StaticBody3D" unique_id=219620680]
+shape = SubResource("ConcavePolygonShape3D_l8w7g")
+
+[node name="wall normal5" type="MeshInstance3D" parent="houseWall" unique_id=808117724]
+transform = Transform3D(-2, -8.74228e-08, 2.04501e-15, 0, -8.74228e-08, -2, 8.74228e-08, -2, 8.74228e-08, -4, 2, -2)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal5" unique_id=1051768079]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal5/StaticBody3D" unique_id=461799743]
+shape = SubResource("ConcavePolygonShape3D_uos6l")
+
+[node name="wall normal7" type="MeshInstance3D" parent="houseWall" unique_id=1683488634]
+transform = Transform3D(-2, -8.74228e-08, 2.04501e-15, 0, -8.74228e-08, -2, 8.74228e-08, -2, 8.74228e-08, 4, 2, -2)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal7" unique_id=241154339]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal7/StaticBody3D" unique_id=341099728]
+shape = SubResource("ConcavePolygonShape3D_ioay5")
+
+[node name="wall normal8" type="MeshInstance3D" parent="houseWall" unique_id=1285272292]
+transform = Transform3D(1.74846e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 1.74846e-07, -5.86639e-15, 2, 2, 0)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal8" unique_id=1809307492]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal8/StaticBody3D" unique_id=1186572322]
+shape = SubResource("ConcavePolygonShape3D_bo1wi")
+
+[node name="wall normal9" type="MeshInstance3D" parent="houseWall" unique_id=1508295384]
+transform = Transform3D(1.74846e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 1.74846e-07, -5.86639e-15, 2, 2, 4)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal9" unique_id=716035028]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal9/StaticBody3D" unique_id=1089620748]
+shape = SubResource("ConcavePolygonShape3D_simja")
+
+[node name="wall normal10" type="MeshInstance3D" parent="houseWall" unique_id=1632967797]
+transform = Transform3D(-3.49691e-07, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, -3.49691e-07, 1.35091e-14, -2, 2, 4)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal10" unique_id=636723844]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal10/StaticBody3D" unique_id=1343307657]
+shape = SubResource("ConcavePolygonShape3D_eyydn")
+
+[node name="wall normal11" type="MeshInstance3D" parent="houseWall" unique_id=1437721]
+transform = Transform3D(-3.49691e-07, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, -3.49691e-07, 1.35091e-14, -2, 2, 0)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal11" unique_id=298067308]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal11/StaticBody3D" unique_id=1618510112]
+shape = SubResource("ConcavePolygonShape3D_1a3ct")
+
+[node name="wall normal12" type="MeshInstance3D" parent="houseWall" unique_id=885561738]
+transform = Transform3D(-3.49691e-07, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, -3.49691e-07, 1.35091e-14, -2, 2, 12)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal12" unique_id=63863936]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal12/StaticBody3D" unique_id=538100423]
+shape = SubResource("ConcavePolygonShape3D_mqu20")
+
+[node name="wall toilet" type="MeshInstance3D" parent="houseWall" unique_id=1175375334]
+transform = Transform3D(-2, -4.37114e-07, 1.73305e-14, 0, -8.74228e-08, -2, 4.37114e-07, -2, 8.74228e-08, -4, 2, 10)
+mesh = SubResource("PlaneMesh_64eru")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall toilet" unique_id=1269524007]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall toilet/StaticBody3D" unique_id=188484639]
+shape = SubResource("ConcavePolygonShape3D_mqu20")
+
+[node name="wall toilet3" type="MeshInstance3D" parent="houseWall" unique_id=1715653125]
+transform = Transform3D(2, 2.62268e-07, -9.68773e-15, 0, -8.74228e-08, -2, -2.62268e-07, 2, -8.74228e-08, -4, 2, 6)
+mesh = SubResource("PlaneMesh_64eru")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall toilet3" unique_id=977549166]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall toilet3/StaticBody3D" unique_id=1331599283]
+shape = SubResource("ConcavePolygonShape3D_mqu20")
+
+[node name="wall toilet2" type="MeshInstance3D" parent="houseWall" unique_id=1958803330]
+transform = Transform3D(-3.49691e-07, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, -3.49691e-07, 1.35091e-14, -6, 2, 8)
+mesh = SubResource("PlaneMesh_64eru")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall toilet2" unique_id=465410660]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall toilet2/StaticBody3D" unique_id=870321257]
+shape = SubResource("ConcavePolygonShape3D_mqu20")
+
+[node name="wall door" type="MeshInstance3D" parent="houseWall" unique_id=36543046]
+transform = Transform3D(-3.49691e-07, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, -3.49691e-07, 1.35091e-14, -2, 2, 8)
+mesh = SubResource("PlaneMesh_x3o27")
+skeleton = NodePath("../..")
+
+[node name="wall door2" type="MeshInstance3D" parent="houseWall" unique_id=1531480651]
+transform = Transform3D(1.74846e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 1.74846e-07, -5.86639e-15, -2, 2, 8)
+mesh = SubResource("PlaneMesh_x3o27")
+skeleton = NodePath("../..")
+
+[node name="wall normal13" type="MeshInstance3D" parent="houseWall" unique_id=1528780253]
+transform = Transform3D(1.74846e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 1.74846e-07, -5.86639e-15, 2, 2, 12)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal13" unique_id=1649989569]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal13/StaticBody3D" unique_id=702981542]
+shape = SubResource("ConcavePolygonShape3D_evi1y")
+
+[node name="wall exit" type="MeshInstance3D" parent="houseWall" unique_id=459961395]
+transform = Transform3D(1.74846e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 1.74846e-07, -5.86639e-15, 2, 2, 16)
+mesh = SubResource("PlaneMesh_nk5c1")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall exit" unique_id=1105912941]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall exit/StaticBody3D" unique_id=2118282760]
+shape = SubResource("ConcavePolygonShape3D_evi1y")
+
+[node name="wall exit2" type="MeshInstance3D" parent="houseWall" unique_id=1360162278]
+transform = Transform3D(-3.49692e-07, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, -3.49692e-07, 1.35091e-14, -2, 2, 16)
+mesh = SubResource("PlaneMesh_nk5c1")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall exit2" unique_id=1227673216]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall exit2/StaticBody3D" unique_id=1724564671]
+shape = SubResource("ConcavePolygonShape3D_evi1y")
+
+[node name="door exit" type="MeshInstance3D" parent="houseWall" unique_id=1121272132]
+transform = Transform3D(-2, -4.76837e-07, 1.77636e-14, -4.75975e-16, -8.74228e-08, -2, 4.76837e-07, -2, 8.74228e-08, 0, 2, 18)
+mesh = SubResource("PlaneMesh_68gm1")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/door exit" unique_id=1124221739]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/door exit/StaticBody3D" unique_id=303753913]
+shape = SubResource("ConcavePolygonShape3D_evi1y")
+
+[node name="wall normal14" type="MeshInstance3D" parent="houseWall" unique_id=624391519]
+transform = Transform3D(-2, -8.74228e-08, 2.04501e-15, 0, -8.74228e-08, -2, 8.74228e-08, -2, 8.74228e-08, 4, 2, 10)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal14" unique_id=1414424139]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal14/StaticBody3D" unique_id=1047969718]
+shape = SubResource("ConcavePolygonShape3D_0he50")
+
+[node name="wall normal16" type="MeshInstance3D" parent="houseWall" unique_id=656934912]
+transform = Transform3D(-2, -8.74228e-08, 2.04501e-15, 0, -8.74228e-08, -2, 8.74228e-08, -2, 8.74228e-08, 8, 2, 10)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal16" unique_id=1197608501]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal16/StaticBody3D" unique_id=1743850736]
+shape = SubResource("ConcavePolygonShape3D_0he50")
+
+[node name="wall normal17" type="MeshInstance3D" parent="houseWall" unique_id=1458128298]
+transform = Transform3D(-2, -8.74228e-08, 2.04501e-15, 0, -8.74228e-08, -2, 8.74228e-08, -2, 8.74228e-08, 12, 2, 10)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal17" unique_id=807441817]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal17/StaticBody3D" unique_id=601902010]
+shape = SubResource("ConcavePolygonShape3D_0he50")
+
+[node name="wall normal18" type="MeshInstance3D" parent="houseWall" unique_id=95794165]
+transform = Transform3D(-2, -8.74228e-08, 2.04501e-15, 0, -8.74228e-08, -2, 8.74228e-08, -2, 8.74228e-08, 16, 2, 10)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal18" unique_id=1123830697]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal18/StaticBody3D" unique_id=592519428]
+shape = SubResource("ConcavePolygonShape3D_0he50")
+
+[node name="wall normal15" type="MeshInstance3D" parent="houseWall" unique_id=1913720403]
+transform = Transform3D(2, 2.62268e-07, -9.68776e-15, 0, -8.74228e-08, -2, -2.62268e-07, 2, -8.74228e-08, 4, 2, 6)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal15" unique_id=967350747]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal15/StaticBody3D" unique_id=556292784]
+shape = SubResource("ConcavePolygonShape3D_j2utk")
+
+[node name="wall normal19" type="MeshInstance3D" parent="houseWall" unique_id=1461222978]
+transform = Transform3D(-3.49691e-07, 2, -8.74228e-08, 0, -8.74228e-08, -2, -2, -3.49691e-07, 1.35091e-14, 6, 2, 4)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal19" unique_id=1509786671]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal19/StaticBody3D" unique_id=1999560275]
+shape = SubResource("ConcavePolygonShape3D_j2utk")
+
+[node name="wall normal20" type="MeshInstance3D" parent="houseWall" unique_id=1698707319]
+transform = Transform3D(2, 2.62268e-07, -9.68776e-15, 0, -8.74228e-08, -2, -2.62268e-07, 2, -8.74228e-08, 8, 2, 2)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal20" unique_id=634029423]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal20/StaticBody3D" unique_id=303731261]
+shape = SubResource("ConcavePolygonShape3D_j2utk")
+
+[node name="wall normal21" type="MeshInstance3D" parent="houseWall" unique_id=389386863]
+transform = Transform3D(2, 2.62268e-07, -9.68776e-15, 0, -8.74228e-08, -2, -2.62268e-07, 2, -8.74228e-08, 12, 2, 2)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal21" unique_id=968327375]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal21/StaticBody3D" unique_id=54063387]
+shape = SubResource("ConcavePolygonShape3D_j2utk")
+
+[node name="wall normal22" type="MeshInstance3D" parent="houseWall" unique_id=567205805]
+transform = Transform3D(2, 2.62268e-07, -9.68776e-15, 0, -8.74228e-08, -2, -2.62268e-07, 2, -8.74228e-08, 16, 2, 2)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal22" unique_id=39561098]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal22/StaticBody3D" unique_id=1924423388]
+shape = SubResource("ConcavePolygonShape3D_j2utk")
+
+[node name="wall normal6" type="MeshInstance3D" parent="houseWall" unique_id=379279116]
+transform = Transform3D(1.74846e-07, -2, 8.74228e-08, 0, -8.74228e-08, -2, 2, 1.74846e-07, -5.86639e-15, 6, 2, -4)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal6" unique_id=2060678994]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal6/StaticBody3D" unique_id=1179696271]
+shape = SubResource("ConcavePolygonShape3D_2cwie")
+
+[node name="wall normal2" type="MeshInstance3D" parent="houseWall" unique_id=1269436780]
+transform = Transform3D(2, 0, 0, 0, -8.74228e-08, -2, 0, 2, -8.74228e-08, 4, 2, -10)
+mesh = SubResource("PlaneMesh_dqjwa")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="houseWall/wall normal2" unique_id=166924232]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="houseWall/wall normal2/StaticBody3D" unique_id=461556064]
+shape = SubResource("ConcavePolygonShape3D_bpsp8")
+
+[node name="houseCeiling" type="Node3D" parent="." unique_id=1031780828]
+
+[node name="ceiling" type="MeshInstance3D" parent="houseCeiling" unique_id=351284823]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, -4, 4, -8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling2" type="MeshInstance3D" parent="houseCeiling" unique_id=1563181006]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, -4, 4, -4)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling3" type="MeshInstance3D" parent="houseCeiling" unique_id=341199873]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 0, 4, -8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling4" type="MeshInstance3D" parent="houseCeiling" unique_id=1776435496]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 0, 4, -4)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling7" type="MeshInstance3D" parent="houseCeiling" unique_id=967542647]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 0, 4, 0)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling8" type="MeshInstance3D" parent="houseCeiling" unique_id=1894529151]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 0, 4, 4)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling9" type="MeshInstance3D" parent="houseCeiling" unique_id=22449760]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 0, 4, 8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling19" type="MeshInstance3D" parent="houseCeiling" unique_id=617704555]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 0, 4, 8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling20" type="MeshInstance3D" parent="houseCeiling" unique_id=1064690561]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, -4, 4, 8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling10" type="MeshInstance3D" parent="houseCeiling" unique_id=243441525]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 0, 4, 12)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling18" type="MeshInstance3D" parent="houseCeiling" unique_id=1100997324]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 0, 4, 16)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling11" type="MeshInstance3D" parent="houseCeiling" unique_id=1115457201]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 4, 4, 8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling12" type="MeshInstance3D" parent="houseCeiling" unique_id=514211461]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 8, 4, 8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling13" type="MeshInstance3D" parent="houseCeiling" unique_id=1738538840]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 12, 4, 8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling14" type="MeshInstance3D" parent="houseCeiling" unique_id=516216444]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 16, 4, 8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling15" type="MeshInstance3D" parent="houseCeiling" unique_id=118221710]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 8, 4, 4)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling16" type="MeshInstance3D" parent="houseCeiling" unique_id=481299126]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 12, 4, 4)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling17" type="MeshInstance3D" parent="houseCeiling" unique_id=454516983]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 16, 4, 4)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling5" type="MeshInstance3D" parent="houseCeiling" unique_id=148383039]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 4, 4, -8)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="ceiling6" type="MeshInstance3D" parent="houseCeiling" unique_id=305858120]
+transform = Transform3D(2, 0, 0, 0, -2, 1.74846e-07, 0, -1.74846e-07, -2, 4, 4, -4)
+mesh = SubResource("PlaneMesh_r8gms")
+skeleton = NodePath("../..")
+
+[node name="tableKitchen" type="Node3D" parent="." unique_id=418346564]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="tableKitchen" unique_id=1691332893]
+transform = Transform3D(1.65059, 0, 0, 0, 0.173784, 0, 0, 0, 2.08974, 10, 1.78404, 4)
+use_collision = true
+size = Vector3(3, 1, 1)
+material = SubResource("StandardMaterial3D_g8vs8")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="tableKitchen" unique_id=812202524]
+transform = Transform3D(0.137176, 0, 0, 0, 0.308099, 0, 0, 0, 0.429744, 7.81721, 0.57136, 3.28048)
+size = Vector3(3, 7.41113, 1)
+material = SubResource("StandardMaterial3D_g8vs8")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="tableKitchen" unique_id=270884059]
+transform = Transform3D(0.137176, 0, 0, 0, 0.308099, 0, 0, 0, 0.429744, 7.81721, 0.57136, 4.72956)
+size = Vector3(3, 7.41113, 1)
+material = SubResource("StandardMaterial3D_g8vs8")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="tableKitchen" unique_id=629168803]
+transform = Transform3D(0.137176, 0, 0, 0, 0.308099, 0, 0, 0, 0.429744, 12.2256, 0.57136, 3.28048)
+size = Vector3(3, 7.41113, 1)
+material = SubResource("StandardMaterial3D_g8vs8")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="tableKitchen" unique_id=2133122752]
+transform = Transform3D(0.137176, 0, 0, 0, 0.308099, 0, 0, 0, 0.429744, 12.2256, 0.57136, 4.72956)
+size = Vector3(3, 7.41113, 1)
+material = SubResource("StandardMaterial3D_g8vs8")
+
+[node name="inter" type="Area3D" parent="tableKitchen" unique_id=54642306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 4)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tableKitchen/inter" unique_id=565080992]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1)
+shape = SubResource("BoxShape3D_gm8e5")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="tableKitchen" unique_id=749029433]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 2, 3)
+aabb = AABB(-2, -1, -1, 4, 2, 2)
+
+[node name="player" type="CharacterBody3D" parent="." unique_id=1847391850]
+transform = Transform3D(-5.96046e-08, 0, 2, 0, 2, 0, -2, 0, -5.96046e-08, 4.36771, 1.6703, -3.44286)
+script = ExtResource("2_4hljj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="player" unique_id=748852353]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0829468, -0.148193, 0.0420532)
+shape = SubResource("BoxShape3D_cyi0r")
+
+[node name="Camera3D" type="Camera3D" parent="player" unique_id=383504925]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.385335, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="player/Camera3D" unique_id=1629088279]
+mesh = SubResource("BoxMesh_eo04v")
+
+[node name="talk" type="AudioStreamPlayer3D" parent="player" unique_id=1176663421]
+stream = ExtResource("15_3ibgb")
+panning_strength = 0.0
+bus = &"Sound"
+
+[node name="toilet" type="Sprite3D" parent="." unique_id=2067701304]
+transform = Transform3D(-1.31134e-07, 0, 3, 0, 3, 0, -3, 0, -1.31134e-07, -5, 1.14434, 8)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("11_4t7rh")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="toilet" unique_id=945678180]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="toilet/StaticBody3D" unique_id=162435275]
+transform = Transform3D(1, 0, 7.10543e-15, 0, 1, 0, -7.10543e-15, 0, 1, 0, 0, -0.0741577)
+shape = SubResource("BoxShape3D_uso2q")
+
+[node name="toilet_trigger" type="Area3D" parent="toilet" unique_id=1707995768]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="toilet/toilet_trigger" unique_id=569247491]
+shape = SubResource("BoxShape3D_v5t3u")
+
+[node name="snd" type="AudioStreamPlayer3D" parent="toilet" unique_id=250190627]
+stream = ExtResource("26_gm8e5")
+bus = &"Sound"
+
+[node name="fridge" type="Sprite3D" parent="." unique_id=2039377923]
+transform = Transform3D(-1.09278e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278e-07, 16, 1.62702, 3)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("12_v21hq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="fridge" unique_id=319564742]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="fridge/StaticBody3D" unique_id=1808764278]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.149658, 0, 0.129639)
+shape = SubResource("BoxShape3D_gyecv")
+
+[node name="frd" type="Area3D" parent="fridge" unique_id=656711300]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="fridge/frd" unique_id=2106996425]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.07421875, 0, -0.043945313)
+shape = SubResource("BoxShape3D_ugyqf")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="fridge" unique_id=1831339121]
+aabb = AABB(-0.1752928, -0.4841352, -0.31707665, 0.3505856, 0.9682704, 0.6341533)
+
+[node name="obj" type="Sprite3D" parent="." unique_id=890038307]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 10, 2.09267, 3.49681)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("14_hnfq4")
+
+[node name="obj2" type="Sprite3D" parent="." unique_id=1917683548]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 8.38004, 2.14283, 4)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("15_g7njp")
+
+[node name="obj3" type="Sprite3D" parent="." unique_id=1632016974]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6992, 2.22141, 3.70835)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("16_s7lei")
+
+[node name="pcTable" type="Node3D" parent="." unique_id=1359643663]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -8)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="pcTable" unique_id=623383373]
+transform = Transform3D(3.6, 0, 0, 0, 0.2, 0, 0, 0, 1.7, 0, 0, -1)
+use_collision = true
+material = SubResource("StandardMaterial3D_2htkg")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="pcTable" unique_id=1085266140]
+transform = Transform3D(0.212912, 0, 0, 0, 1.89, 0, 0, 0, 1.87, -1.64862, -1, -1.09368)
+material = SubResource("StandardMaterial3D_2htkg")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="pcTable" unique_id=1679620567]
+transform = Transform3D(0.212912, 0, 0, 0, 1.89, 0, 0, 0, 1.87, 1.69034, -1, -1.09106)
+material = SubResource("StandardMaterial3D_2htkg")
+
+[node name="laptop" type="Node3D" parent="." unique_id=1252518047]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2411, -9.29883)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="laptop" unique_id=701645940]
+transform = Transform3D(-3.0598e-08, 0, 1, 0, 0.138716, 0, -0.7, 0, -4.37114e-08, 0, -0.1795, 0)
+material = SubResource("StandardMaterial3D_wbwge")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="laptop" unique_id=1464393892]
+transform = Transform3D(1.33748e-16, -0.944267, -3.49691e-08, 3.0598e-09, 4.12752e-08, -0.8, -0.07, 0, -3.49691e-08, -4.52481e-10, 0.260204, -0.402634)
+size = Vector3(0.715332, 1, 0.974121)
+material = SubResource("StandardMaterial3D_u4ij0")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="laptop" unique_id=656151769]
+transform = Transform3D(1.33748e-16, 0.944267, -3.49691e-08, 3.0598e-09, -4.12752e-08, -0.8, -0.07, 0, -3.49691e-08, 0.462733, 0.270556, -0.392671)
+size = Vector3(1, 0.050293, 1)
+material = SubResource("StandardMaterial3D_klkwl")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="laptop" unique_id=904814418]
+transform = Transform3D(1.33748e-16, 11.2325, -3.49691e-08, 3.0598e-09, -4.90987e-07, -0.8, -0.07, 0, -3.49691e-08, -0.019071, 0.657164, -0.392671)
+size = Vector3(1, 0.0789185, 0.0493164)
+material = SubResource("StandardMaterial3D_klkwl")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="laptop" unique_id=1959702361]
+transform = Transform3D(1.33748e-16, 0.944267, -3.49691e-08, 3.0598e-09, -4.12752e-08, -0.8, -0.07, 0, -3.49691e-08, -0.466543, 0.265229, -0.393007)
+size = Vector3(1, 0.050293, 1)
+material = SubResource("StandardMaterial3D_klkwl")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="laptop" unique_id=1631972208]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, -1)
+light_energy = 16.0
+light_volumetric_fog_energy = 2.445
+
+[node name="OmniLight3D" type="OmniLight3D" parent="laptop" unique_id=501060450]
+light_energy = 5.202
+
+[node name="bed" type="CSGBox3D" parent="." unique_id=705497682]
+transform = Transform3D(2.3, 0, 0, 0, 0.36, 0, 0, 0, 3.5, 4.44197, 0.200372, -7.16772)
+use_collision = true
+size = Vector3(1.15063, 1.20605, 1.47559)
+material = SubResource("StandardMaterial3D_ngh0s")
+
+[node name="dakimakuru" type="MeshInstance3D" parent="." unique_id=1603734172]
+transform = Transform3D(1.12776, -0.536506, 0.439561, 0, 1.54579, 0.310686, -1.10774, -0.546201, 0.447504, -4.37292, 1.68711, -9)
+mesh = SubResource("CapsuleMesh_vcxvf")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="dakimakuru" unique_id=356794059]
+transform = Transform3D(0.809429, 0.192047, -0.554925, -0.29638, 0.94942, -0.103736, 0.506935, 0.248436, 0.825407, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="dakimakuru/StaticBody3D" unique_id=1423355692]
+transform = Transform3D(1, 0, 4.47035e-08, 5.96046e-08, 1, 4.47035e-08, 3.57628e-07, -1.49012e-07, 1, 0.205472, 0.0620139, -1.90735e-06)
+shape = SubResource("BoxShape3D_13bdy")
+
+[node name="sex_toy" type="Area3D" parent="dakimakuru" unique_id=1900239674]
+transform = Transform3D(0.82159513, 0.05457717, -0.5674527, -0.24542847, 0.9322978, -0.26567966, 0.51453507, 0.35755014, 0.7793664, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="dakimakuru/sex_toy" unique_id=1146385409]
+transform = Transform3D(0.9999999, 8.046627e-07, -4.172325e-07, -2.9802322e-08, 0.99999726, 4.0233135e-07, -1.7881393e-07, 7.4207783e-06, 0.99999917, 0.5306053, 0.042969346, 0.33496094)
+shape = SubResource("BoxShape3D_p83e5")
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="dakimakuru" unique_id=1271350877]
+aabb = AABB(-0.2648517, -0.30064625, -0.639423, 0.5297034, 0.6012925, 1.278846)
+
+[node name="chair" type="Node3D" parent="." unique_id=1532877853]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.99137)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="chair" unique_id=142516319]
+transform = Transform3D(1, 0, 0, 0, 0.189941, 0, 0, 0, 1, 0, 0.537362, 0)
+use_collision = true
+material = SubResource("StandardMaterial3D_2gh4x")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="chair" unique_id=406322218]
+transform = Transform3D(1, 0, 0, 0, 1.20732, 0, 0, 0, 0.159731, 0, 0.9348, 0.423759)
+size = Vector3(1, 0.788208, 1)
+material = SubResource("StandardMaterial3D_2gh4x")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="chair" unique_id=2105872359]
+transform = Transform3D(1, 0, 0, 0, 1.20732, 0, 0, 0, 0.159731, -0.409912, 0.0546914, 0.423759)
+size = Vector3(0.180176, 0.788208, 1)
+material = SubResource("StandardMaterial3D_2gh4x")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="chair" unique_id=849234608]
+transform = Transform3D(1, 0, 0, 0, 1.20732, 0, 0, 0, 0.159731, -0.409912, 0.0546914, -0.389428)
+size = Vector3(0.180176, 0.788208, 1)
+material = SubResource("StandardMaterial3D_2gh4x")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="chair" unique_id=1457375965]
+transform = Transform3D(1, 0, 0, 0, 1.20732, 0, 0, 0, 0.159731, 0.418377, 0.0546914, 0.423759)
+size = Vector3(0.180176, 0.788208, 1)
+material = SubResource("StandardMaterial3D_2gh4x")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="chair" unique_id=1081763600]
+transform = Transform3D(1, 0, 0, 0, 1.20732, 0, 0, 0, 0.159731, 0.418377, 0.0546914, -0.389428)
+size = Vector3(0.180176, 0.788208, 1)
+material = SubResource("StandardMaterial3D_2gh4x")
+
+[node name="Area3D" type="Area3D" parent="chair" unique_id=2040651178]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="chair/Area3D" unique_id=619973474]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0279541, 0.521057, -0.0788574)
+shape = SubResource("BoxShape3D_yvdhl")
+
+[node name="behindGlassJump" type="Sprite3D" parent="." unique_id=131778685]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0.0282409, 2.5559, -11.9522)
+visible = false
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("24_wjrst")
+
+[node name="mainJumpscare" type="Sprite3D" parent="." unique_id=740502305]
+transform = Transform3D(0.027437627, 0, -1.3997291, 0, 1.3999997, 0, 1.3997291, 0, 0.027437627, 18.402, 2.256, 7.26)
+visible = false
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("27_jxef1")
+
+[node name="pointSee" type="Sprite3D" parent="." unique_id=132721138]
+transform = Transform3D(-0.676103, 0, -1.22592, 0, 1.4, 0, 1.22592, 0, -0.676103, 21.8759, 1.807, 13.5564)
+visible = false
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+
+[node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="pointSee" unique_id=1952168155]
+
+[node name="jump1" type="AnimationPlayer" parent="." unique_id=761436786]
+libraries/ = SubResource("AnimationLibrary_5k1q8")
+
+[node name="jump2" type="AnimationPlayer" parent="." unique_id=1295861421]
+libraries/ = SubResource("AnimationLibrary_qk6ps")
+
+[node name="masterCam" type="Camera3D" parent="." unique_id=1084591588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.30178, -7.0501)
+
+[node name="lookArea" type="Area3D" parent="." unique_id=1230502521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3319, 0, 6.0494)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="lookArea" unique_id=1777567286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.416853, 1.56671, 2.00003)
+shape = SubResource("BoxShape3D_an3b2")
+
+[node name="ambience" type="AudioStreamPlayer" parent="." unique_id=1315045099]
+stream = ExtResource("26_gikj4")
+autoplay = true
+bus = &"Sound"
+
+[node name="track" type="AudioStreamPlayer" parent="." unique_id=1098141870]
+stream = ExtResource("27_e4x06")
+bus = &"Music"
+
+[node name="Distract1" type="AudioStreamPlayer3D" parent="." unique_id=1103934879]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.4526, 0, 7.48048)
+stream = ExtResource("28_l3lpx")
+emission_angle_enabled = true
+
+[node name="Distract2" type="AudioStreamPlayer3D" parent="." unique_id=1756635534]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.4526, 0, 7.48048)
+stream = ExtResource("29_s4vyc")
+emission_angle_enabled = true
+
+[node name="scary" type="Area3D" parent="." unique_id=2128853801]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.0214725, 0, 4.05281)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="scary" unique_id=1428271182]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.168304)
+shape = SubResource("BoxShape3D_24sng")
+
+[node name="Distract3" type="AudioStreamPlayer3D" parent="." unique_id=1366895151]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0424558, 0, 17.7065)
+stream = ExtResource("30_2vem7")
+volume_db = 76.19
+unit_size = 25.22
+max_db = 6.0
+max_distance = 2301.56
+emission_angle_enabled = true
+
+[node name="sus" type="AudioStreamPlayer" parent="." unique_id=1612992389]
+stream = ExtResource("31_m3vvr")
+volume_db = 2.0
+bus = &"Sound"
+
+[node name="openDoor" type="AudioStreamPlayer" parent="." unique_id=533054639]
+stream = ExtResource("33_uu5rm")
+bus = &"Sound"
+
+[node name="doorTrigger" type="Area3D" parent="." unique_id=169603811]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 18)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="doorTrigger" unique_id=1524657713]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -0.5)
+shape = SubResource("BoxShape3D_hyd6k")
+
+[node name="Timer" type="Timer" parent="." unique_id=1060788599]
+
+[connection signal="timeout" from="hud/nextDialogue" to="." method="_on_next_dialogue_timeout"]
+[connection signal="timeout" from="hud/nextCharacter" to="." method="_on_next_character_timeout"]
+[connection signal="value_changed" from="hud/masterBar" to="." method="_on_master_bar_value_changed"]
+[connection signal="pressed" from="hud/pause/resume" to="hud/pause" method="_on_resume_pressed"]
+[connection signal="pressed" from="hud/pause/options" to="hud/pause" method="_on_options_pressed"]
+[connection signal="pressed" from="hud/pause/exit" to="hud/pause" method="_on_exit_pressed"]
+[connection signal="toggled" from="hud/pause/options_menu/vsync_check" to="hud/pause/options_menu" method="_on_vsync_check_toggled"]
+[connection signal="toggled" from="hud/pause/options_menu/full_check" to="hud/pause/options_menu" method="_on_full_check_toggled"]
+[connection signal="toggled" from="hud/pause/options_menu/flash_check" to="hud/pause/options_menu" method="_on_flash_check_toggled"]
+[connection signal="value_changed" from="hud/pause/options_menu/sense_slider" to="hud/pause/options_menu" method="_on_sense_slider_value_changed"]
+[connection signal="value_changed" from="hud/pause/options_menu/music_slider" to="hud/pause/options_menu" method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="hud/pause/options_menu/sound_slider" to="hud/pause/options_menu" method="_on_sound_slider_value_changed"]
+[connection signal="pressed" from="hud/pause/options_menu/Button" to="hud/pause" method="_on_button_pressed"]
+[connection signal="body_entered" from="tableKitchen/inter" to="." method="_on_inter_body_entered"]
+[connection signal="body_exited" from="tableKitchen/inter" to="." method="_on_inter_body_exited"]
+[connection signal="body_entered" from="toilet/toilet_trigger" to="." method="_on_toilet_trigger_body_entered"]
+[connection signal="body_exited" from="toilet/toilet_trigger" to="." method="_on_toilet_trigger_body_exited"]
+[connection signal="body_entered" from="fridge/frd" to="." method="_on_frd_body_entered"]
+[connection signal="body_exited" from="fridge/frd" to="." method="_on_frd_body_exited"]
+[connection signal="body_entered" from="dakimakuru/sex_toy" to="." method="_on_sex_toy_body_entered"]
+[connection signal="body_exited" from="dakimakuru/sex_toy" to="." method="_on_sex_toy_body_exited"]
+[connection signal="body_entered" from="chair/Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_exited" from="chair/Area3D" to="." method="_on_area_3d_body_exited"]
+[connection signal="screen_entered" from="pointSee/VisibleOnScreenNotifier3D" to="." method="_on_visible_on_screen_notifier_3d_screen_entered"]
+[connection signal="body_entered" from="lookArea" to="." method="_on_look_area_body_entered"]
+[connection signal="body_exited" from="lookArea" to="." method="_on_look_area_body_exited"]
+[connection signal="body_entered" from="scary" to="." method="_on_scary_body_entered"]
+[connection signal="body_entered" from="doorTrigger" to="." method="_on_door_trigger_body_entered"]
+[connection signal="body_exited" from="doorTrigger" to="." method="_on_door_trigger_body_exited"]

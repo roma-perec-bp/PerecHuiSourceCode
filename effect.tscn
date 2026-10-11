@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://beswlpocthhri"]
+
+[ext_resource type="Script" uid="uid://dqlb70165n348" path="res://effect.gd" id="1_fmdbh"]
+[ext_resource type="Texture2D" uid="uid://chwtgn8iuwv8a" path="res://bigTroop_eff.png" id="2_npwnd"]
+[ext_resource type="Texture2D" uid="uid://ybsto5voiqji" path="res://bigTroop_eff1.png" id="3_c3aq0"]
+[ext_resource type="Texture2D" uid="uid://b6d4sn1fjsaik" path="res://bigTroop_eff2.png" id="4_eoyux"]
+[ext_resource type="Texture2D" uid="uid://bafkdxcri7oi0" path="res://bigTroop_eff3.png" id="5_m2wpf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_55nal"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_npwnd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_c3aq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_eoyux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m2wpf")
+}],
+"loop": false,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="effect" type="Node3D" unique_id=581181939]
+script = ExtResource("1_fmdbh")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="." unique_id=921868282]
+transform = Transform3D(2.735, 0, 0, 0, 2.735, 0, 0, 0, 2.735, -0.07492459, 0.45812035, 0)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_55nal")
+frame_progress = 0.08443921
+
+[connection signal="animation_finished" from="AnimatedSprite3D" to="." method="_on_animated_sprite_3d_animation_finished"]

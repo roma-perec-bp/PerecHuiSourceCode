@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dtq1dy705rkst"]
+
+[ext_resource type="Texture2D" uid="uid://l67v2n1t034i" path="res://pepper jump.png" id="1_gx3fp"]
+[ext_resource type="Script" uid="uid://d3rt5yo035j6r" path="res://bomb.gd" id="2_ohyvr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fkls6"]
+
+[node name="perc" type="Sprite3D" unique_id=696575257]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0, 0)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("1_gx3fp")
+script = ExtResource("2_ohyvr")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=734247613]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=44161091]
+shape = SubResource("BoxShape3D_fkls6")
+
+[node name="hui" type="Node3D" parent="." unique_id=72743087]
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

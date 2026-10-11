@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://duol21mm3hg1t"]
+
+[ext_resource type="Texture2D" uid="uid://c4qg64odp1iwv" path="res://wooden_texture.png" id="1_oc6fh"]
+[ext_resource type="AudioStream" uid="uid://dvulbfdvpjqd2" path="res://ittdw_easter_egg.wav" id="2_aamgk"]
+[ext_resource type="Script" uid="uid://vouwcduu484a" path="res://ittdw.gd" id="2_wo37t"]
+[ext_resource type="Texture2D" uid="uid://lbgf515l6dhp" path="res://bottle.png" id="3_3rde1"]
+[ext_resource type="FontFile" uid="uid://cmr1klrey2udc" path="res://Bionicle.ttf" id="3_st8pn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wlf5x"]
+albedo_texture = ExtResource("1_oc6fh")
+uv1_scale = Vector3(0.72, 1, 2.645)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_rvjti"]
+material = SubResource("StandardMaterial3D_wlf5x")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fur5g"]
+albedo_texture = ExtResource("1_oc6fh")
+uv1_scale = Vector3(-0.25, 0.77, 1.12)
+uv1_offset = Vector3(0, 0, -0.525)
+uv1_triplanar = true
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_5s14n"]
+material = SubResource("StandardMaterial3D_fur5g")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vgpbc"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_1pnui"]
+material = SubResource("StandardMaterial3D_vgpbc")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u6m31"]
+size = Vector3(1, 8.52533, 1)
+
+[node name="ittdw_egg" type="MeshInstance3D" unique_id=418097919]
+transform = Transform3D(1.33, 0, 0, 0, 0.2, 0, 0, 0, 3.36, 0, 0.521558, 0)
+mesh = SubResource("BoxMesh_rvjti")
+script = ExtResource("2_wo37t")
+
+[node name="sound" type="AudioStreamPlayer" parent="." unique_id=879211910]
+stream = ExtResource("2_aamgk")
+
+[node name="spine" type="MeshInstance3D" parent="." unique_id=1817867815]
+transform = Transform3D(0.11457, 0, 0, 0, 5.44712, 0, 0, 0, 0.991596, -0.431315, 2.27675, 0)
+mesh = SubResource("BoxMesh_5s14n")
+
+[node name="leg1" type="MeshInstance3D" parent="." unique_id=762236290]
+transform = Transform3D(0.158828, 0, 0, 0, 2.66031, 0, 0, 0, 0.0673185, 0.337073, -1.72663, 0.410684)
+mesh = SubResource("BoxMesh_1pnui")
+
+[node name="leg2" type="MeshInstance3D" parent="." unique_id=361525441]
+transform = Transform3D(0.158828, 0, 0, 0, 2.66031, 0, 0, 0, 0.0673185, -0.443139, -1.72663, 0.410684)
+mesh = SubResource("BoxMesh_1pnui")
+
+[node name="leg3" type="MeshInstance3D" parent="." unique_id=1129544808]
+transform = Transform3D(0.158828, 0, 0, 0, 2.66031, 0, 0, 0, 0.0673185, 0.337073, -1.72663, -0.405648)
+mesh = SubResource("BoxMesh_1pnui")
+
+[node name="leg4" type="MeshInstance3D" parent="." unique_id=1057847896]
+transform = Transform3D(0.158828, 0, 0, 0, 2.66031, 0, 0, 0, 0.0673185, -0.443139, -1.72663, -0.405648)
+mesh = SubResource("BoxMesh_1pnui")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=841449647]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=290724403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0.0042242203, 1.21084, 0.000396868)
+shape = SubResource("BoxShape3D_u6m31")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1933892749]
+transform = Transform3D(-8.61114e-09, 0, -1.493, 0, 2.757, 0, 0.197, 0, -6.52611e-08, 0, 1.8494, 0)
+billboard = 1
+alpha_cut = 1
+texture_filter = 0
+texture = ExtResource("3_3rde1")
+
+[node name="text" type="Node3D" parent="." unique_id=1973746796]
+transform = Transform3D(1, 0, 0, 0, 1.03663, 0, 0, 0, 0.868214, 0, 0, 0)
+visible = false
+
+[node name="text_def" type="Label3D" parent="text" unique_id=399144833]
+transform = Transform3D(-1.74846e-08, 0, 1, 0, 8.1036, 0, -0.4, 0, -4.37114e-08, -0.75188, -0.195126, 0)
+double_sided = false
+alpha_cut = 1
+texture_filter = 0
+text = "IT'S TIME TO DRINK WATER"
+font = ExtResource("3_st8pn")
+
+[node name="tex_back" type="Label3D" parent="text" unique_id=1204691359]
+transform = Transform3D(-1.74845e-08, 0, -1, 0, 8.1036, 0, 0.4, 0, -4.37114e-08, -0.75188, -0.195126, 0)
+double_sided = false
+alpha_cut = 1
+texture_filter = 0
+text = "IT'S TIME TO DRINK WATER"
+font = ExtResource("3_st8pn")
